@@ -1026,7 +1026,7 @@ a {
 
 .type {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
-    background-image: url("1200px-Public_key_encryption.svg");
+    background-image: url("Public_key_encryption.svg");
     background-position: 55% 65%;
     background-repeat: no-repeat;
     background-size: 55%;
@@ -1036,7 +1036,7 @@ a {
 }
 .type1 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
-    background-image: url("Onion_diagram11.png");
+    background-image: url("Onion_diagram.png");
     background-position: 65% 75%;
     background-repeat: no-repeat;
     background-size: 85%;
