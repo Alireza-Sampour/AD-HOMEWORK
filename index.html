@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="css/font-owsome/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/ionicon/css/ionicons.min.css" type="text/css">
 
-    <title>SASS</title>
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <title>مقدمه‌ای بر Tor</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic"
+          rel="stylesheet" type="text/css">
     <link href="css/impress-demo.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="favicon.png">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -19,246 +20,369 @@
 
 
 <body class="impress-not-supported">
-    <div class="fallback-message">
-        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified
+        version of this presentation.</p>
 
-        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or
-            <b>Firefox</b> browser.</p>
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or
+        <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+    <div id="bored" class="step slide padd" data-x="-1000" data-y="-1500">
+        <p style=" font-size: 35px; line-height: 27px; margin-top: 30px; ">
+            عنوان ارائه:</p>
+        <p id="subject"><br>مقدمه‌ای بر <span style="color: #c69; font-family: 'vazirb';">Tor</span></p>
+        <img src="css/qt.png" class="image">
+
+        <div class="init_page">
+
+            <div id="name">علیرضا سام‌پور ماهانی</div>
+
+            <div class="details1">
+                <br>دانشجوی رشته‌ی مهندسی نرم‌افزار
+            </div>
+            <p class="details"><br><br>درس روش پژوهش و ارائه</p>
+            <p class="details"> زمان: ۱۱ خرداد ۹۸</p>
+
+
+        </div>
+        <img src="css/University_of_Ilam_Logo.png" style="float: left; margin-top: 0px; width: 120px; ">
+
     </div>
 
-    <div id="impress">
-
-        <div id="bored" class="step slide padd" data-x="-1000" data-y="-1500">
-            <p style=" font-size: 35px; line-height: 27px; margin-top: 30px; ">
-                عنوان ارائه:</p>
-            <p id="subject"><br>مقدمه‌ای بر <span style="color: #c69; font-family: 'vazirb';">SASS</span></p>
-            <img src="css/photo_2017-02-04_00-58-51.jpg" class="image">
-
-            <div class="init_page">
-
-                <div id="name">سمانه سادات یعقوبی</div>
-
-                <div class="details1">
-                    <br>دانشجوی رشته‌ی مهندسی نرم‌افزار
-                </div>
-                <p class="details"><br><br>درس مهندسی اینترنت</p>
-                <p class="details"> زمان: ۲۱ آبان</p>
-
-
-            </div>
-            <img src="css/Logo3.png" style="float: left; margin-top: 30px; width: 240px; ">
-
-        </div>
-
-        <div class="step slide" data-x="0" data-y="-1500">
-            <img src="images/logo-b6e1ef6e.svg" class="image-logo">
-            <div class="fehrest1">
-                <ol>
-                    <li class="lis">
-                        مقدمه
-                        <ol class="fehrest2">
-                            <li>Sass چیست؟</li>
-                            <li>چرا باید از Sass استفاده کنیم؟</li>
-                            <li>نصب Sass</li>
-                        </ol>
-                    </li>
-                    <li class="lis">
-                        بررسی قابلیت‌های Sass
-                        <ol class="fehrest2">
-                            <li>متغیر</li>
-                            <li>تودرتو نویسی</li>
-                            <li>گروه‌بندی</li>
-                            <li>ارث‌بری</li>
-                            <li>عملگر</li>
-                            <li>import</li>
-                        </ol>
-                    </li>
-                    <li class="lis">جمع‌بندی</li>
-                </ol>
-            </div>
-        </div>
-
-
-        <div class="step slide oposit-text" data-x="-8800" data-y="-200" data-scale="2">
-            <img src="./images/color-1c4aab2b.png" style="float: left;margin-top:60px; width:15%">
-            <h6 style="margin:100px 0 0 10px; font-size: 45px; color: #555;">Sass چیست؟</h6>
-            <ol style="float: right; color: #555; direction: rtl; line-height: 2.5; font-size: 33px; margin: 80px 150px 0 30px;">
-                <i class="ion-android-checkbox-blank" style="font-size: 30px; color:#c69; margin-left: 20px;"></i>Syntactically Awesome Style Sheets (SASS)
-                <br><i class="ion-android-checkbox-blank" style="font-size: 30px; color:#c69; margin-left: 20px;"></i>زبان اسکریپتی
-                <br><i class="ion-android-checkbox-blank" style="font-size: 30px; color:#c69; margin-left: 20px;"></i>پیش‌پردازنده CSS
-                <br><i class="ion-android-checkbox-blank" style="font-size: 30px; color:#c69; margin-left: 20px;"></i>sass. یا scss.
-            </ol>
-            <p class="num" style="margin: 0 0px 120px 0;">۱</p>
-        </div>
-
-        <div id="its" class="step slide oposit-text" data-x="-6500" data-y="1500" data-rotate="90" data-scale="6">
-            <img src="./images/color-1c4aab2b.png" style="float: left;margin-top:60px; width:15%">
-            <h6 style="margin:100px 0 0 10px; font-size: 45px; color: #555;">چرا از Sass استفاده کنیم؟</h6>
-            <ol style="float: right; color: #555; direction: rtl; line-height: 2.5; font-size: 33px; margin: 80px 150px 0 30px;">
-                <i class="ion-android-checkbox-blank" style="font-size: 30px; color:#c69; margin-left: 20px;"></i>استفاده از اصول برنامه‌نویسی برای نوشتن کدهای CSS 
-                <br><i class="ion-android-checkbox-blank" style="font-size: 30px; color:#c69; margin-left: 20px;"></i>توسعه سریع
-                <br><i class="ion-android-checkbox-blank" style="font-size: 30px; color:#c69; margin-left: 20px;"></i>عدم نیاز به نوشتن کد تکراری
-                <br><i class="ion-android-checkbox-blank" style="font-size: 30px; color:#c69; margin-left: 20px;"></i>مدیریت استایل‌ها در برنامه‌های بزرگ
-            </ol>
-            <p class="num" style="margin: 0 0px 120px 0;">۲</p>
-        </div>
-
-        <div class="step slide type " data-x="2550" data-y="4850" data-z="-3000" data-rotate="180" data-scale="6">
-            <div style="position: absolute; top: 25px; right: 20px;">
-            <img src="./images/color-1c4aab2b.png" style="float: left; width:15%">
-                <h1 style="font-size: 40px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0); margin: 20px 20px 0 0; color: #555; float: right; color: #555;">نصب Sass</h1>
-                <ol style="direction: rtl; line-height: 65px; line-height: 1.7; font-size: 35 px; margin: 120px 300px 0 30px;">
-                    <li><i class="ion-android-checkmark-circle" style="font-size: 45px; color:#c69; margin-left: 20px;"></i>استفاده از اپلیکیشن
-                    <li><i class="ion-android-checkmark-circle" style="font-size: 45px; color: #c69; margin-left: 10px;"></i>استفاده از کامندلاین 
+    <div class="step slide" data-x="0" data-y="-1500">
+        <img src="css/favicon.png" class="image-logo">
+        <div class="fehrest1">
+            <ol>
+                <li class="lis">
+                    مقدمه
+                    <ol class="fehrest2">
+                        <li>آشنایی و معرفی Tor</li>
                     </ol>
-                    <img style="width:70%; margin-top:80px; margin-right:150px;" src="./images/install.png"/>
-            </div>
-            <p class="num" style="margin: 500px 30px 15px 0;">۳</p>
-        </div>
-
-        <div class="step slide oposit-text" data-x="5000" data-y="-5000" data-rotate="1500" data-scale="2">
-            <img src="./images/color-1c4aab2b.png" style="float: left;width:15%">
-            <h1 style="margin:30px 10px 10px 10px; color: #555; font-size: 38px;">قابلیت‌های Sass</h1>
-            <h4 style="margin-top: 60px; line-height: 2; font-size: 28px; line-height: 3;"><i class="ion-android-checkbox-blank" style="font-size: 30px; color:#6a6a6a; margin-left: 10px;"></i> متغیرها</h4>
-            <p style="line-height: 1.5; font-size: 28px;"><i class="ion-social-sass" style="font-size: 45px; color: #c69; margin-left: 10px;"></i> مقادیری که به میزان زیادی استفاده می‌شوند، می‌تواند به‌عنوان متغیر تعریف شود..
-            </p>
-            <img src="./images/var-sass.png" style="width:48%;float: left;margin-top:10px;">
-            <br/>
-            <img src="./images/var-css.png" style="float: right;width:48%;margin-top:10px;">
-            <p style="line-height: 2.2; font-size: 28px; margin-right: 100px;">
-                <span style="font-weight: 700; font-size: 35px;">
-                    مزیت:</span> 
-                    <br/> 
-                <span style="margin-right: 100px;"><i class="ion-ios-checkmark-outline" style="font-size: 30px; color:#c69; margin-left: 10px;"></i>راحت‌تر شدن خطایابی</span>
-                <span style="margin-right: 100px;"><i class="ion-ios-checkmark-outline" style="font-size: 30px; color:#c69; margin-left: 10px;"></i>سریع‌تر شدن تغییرات</span>
-            </p>
-            <p class="num" style="margin: 500px 30px 100px 0;">۴</p>
-        </div>
-
-        <div class="step slide oposit-text" data-x="5000" data-y="-8000" data-rotate="1450" data-scale="4">
-            <img src="./images/color-1c4aab2b.png" style="float: left;width:15%">
-            <h1 style="margin:30px 10px 10px 10px; color: #555; font-size: 38px;">قابلیت‌های Sass</h1>
-            <h4 style="margin-top: 40px; line-height: 2; font-size: 28px; line-height: 3;"><i class="ion-android-checkbox-blank" style="font-size: 30px; color:#6a6a6a; margin-left: 10px;"></i> تودرتو نویسی</h4>
-            <p style="line-height: 1.5; font-size: 28px;"><i class="ion-social-sass" style="font-size: 45px; color: #c69; margin-left: 10px;"></i> استفاده از ساختار سلسله مراتبی که در HTML وجود دارد.
-            </p>
-            <img src="./images/nesting-scss.png" style="width:48%;float: left;margin-top:10px;">
-            <img src="./images/nesting-css.png" style="float: right;width:48%;margin-top:10px;">
-            <p class="num" style="margin: 500px 30px 100px 0;">۵</p>
-        </div>
-
-        <div class="step slide oposit-text" data-x="2300" data-y="-3300" data-rotate="1300" data-scale="2">
-            <img src="./images/color-1c4aab2b.png" style="float: left;width:15%">
-            <h1 style="margin:30px 10px 10px 10px; color: #555; font-size: 38px;">قابلیت‌های Sass</h1>
-            <h4 style="margin-top: 60px; line-height: 2; font-size: 28px; line-height: 3;"><i class="ion-android-checkbox-blank" style="font-size: 30px; color:#6a6a6a; margin-left: 10px;"></i>گروه‌بندی</h4>
-            <p style="line-height: 1.5; font-size: 28px;"><i class="ion-social-sass" style="font-size: 45px; color: #c69; margin-left: 10px;"></i>
-                تعریف mixinها باعث می‌شود که گروهی از دستورات پرکاربرد را به راحتی در زمان مورد نیاز به کار ببرید. استفاده از متغیرها در کنار تعریف mixinها، کد را انعطاف‌پذیرتر خواهد کرد.
-            </p>
-            <img src="./images/mixin-scss.png" style="width:48%;float: left;margin-top:10px;">
-            <img src="./images/mixin-css.png" style="float: right;width:48%;margin-top:10px;">
-            <p class="num" style="margin: 500px 30px 100px 0;">۶</p>
-        </div>
-
-        <div class="step slide oposit-text" style="height:1000px" data-x="-5300" data-y="-6000" data-rotate="1200" data-scale="4">
-            <img src="./images/color-1c4aab2b.png" style="float: left;width:15%">
-            <h1 style="margin:30px 10px 10px 10px; color: #555; font-size: 38px;">قابلیت‌های Sass</h1>
-            <h4 style="margin-top: 30px; line-height: 2; font-size: 28px; line-height: 3;"><i class="ion-android-checkbox-blank" style="font-size: 30px; color:#6a6a6a; margin-left: 10px;"></i>ارث‌بری</h4>
-            <p style="line-height: 1.5; font-size: 28px;"><i class="ion-social-sass" style="font-size: 45px; color: #c69; margin-left: 10px;"></i>با به کارگیری این ویژگی می‌توان گروهی از خصوصیت‌های یک selector را در selector دیگری به اشتراک گذاشت تا از ایجاد کلاس های مختلف و نوشتن کدهای تکراری جلوگیری شود.
-            </p>
-            <img src="./images/inherit-scss.png" style="width:48%;float: left;margin-top:10px;">
-            <img src="./images/inherit-css.png" style="float: right;width:48%;margin-top:10px;">
-            <p class="num" style="margin: 500px 30px 100px 0;">۷</p>
+                </li>
+                <li class="lis">
+                    معرفی شبکه‌ی Tor
+                    <ol class="fehrest2">
+                        <li>Tor چگونه کار می‌کند؟</li>
+                        <li>توضیحی در مورد رمزنگاری دو کلیده</li>
+                        <li>پل چیست؟</li>
+                        <li>تفاوت میان Tor و vpn</li>
+                    </ol>
+                </li>
+                <li class="lis">سرویس‌های مخفی Tor
+                    <ol class="fehrest2">
+                        <li>سرویس‌های مخفی Tor چگونه کار می‌کنند؟</li>
+                        <li>دارک وب و دیپ وب چیست؟</li>
+                    </ol>
+                </li>
+                <li class="lis">نحوه‌ی استفاده
+                    <ol class="fehrest2">
+                        <li>معرفی Orbot, Orfox, Tor Browser</li>
+                    </ol>
+                </li>
+                <li class="lis">پرسش و پاسخ</li>
             </ol>
         </div>
-
-
-        <div class="step slide oposit-text" data-x="-5300" data-y="-10000" data-rotate="1100" data-scale="2">
-            <img src="./images/color-1c4aab2b.png" style="float: left;width:15%">
-            <h1 style="margin:30px 10px 10px 10px; color: #555; font-size: 38px;">قابلیت‌های Sass</h1>
-            <h4 style="margin-top: 30px; line-height: 2; font-size: 28px; line-height: 3;"><i class="ion-android-checkbox-blank" style="font-size: 30px; color:#6a6a6a; margin-left: 10px;"></i>عملگر</h4>
-            <p style="line-height: 1.5; font-size: 28px;"><i class="ion-social-sass" style="font-size: 45px; color: #c69; margin-left: 10px;"></i>در Sass عملگرهای ریاضی + ، - ، * ، /  و % قابل استفاده هستند؛ در نتیجه به کمک Sass محاسبات در Css امکان‌پذیر شده است.
-            </p>
-            <br/>
-            <img src="./images/operator-scss.png" style="width:48%;float: left;margin-top:10px;">
-            <img src="./images/operator-css.png" style="float: right;width:48%;margin-top:10px;">
-            <p class="num" style="margin: 500px 30px 100px 0;">۸</p>
-            </ol>
-        </div>
-
-        <div class="step slide oposit-textt" data-x="10000" data-y="-8000" data-rotate="1000" data-scale="4">
-            <img src="./images/color-1c4aab2b.png" style="float: left;width:15%">
-            <h1 style="margin:30px 10px 10px 10px; color: #555; font-size: 38px;">قابلیت‌های Sass</h1>
-            <h4 style="margin-top: 30px; line-height: 2; font-size: 28px; line-height: 3;"><i class="ion-android-checkbox-blank" style="font-size: 30px; color:#6a6a6a; margin-left: 10px;"></i>import</h4>
-            <p style="line-height: 1.5; font-size: 28px;"><i class="ion-social-sass" style="font-size: 45px; color: #c69; margin-left: 10px;"></i>امکان پیاده‌سازی استایل صفحات، بصورت ماژولار را فراهم می‌کند.
-            </p>
-            <br/>
-            <img src="./images/import-scss.png" style="width:48%;float: left;margin-top:10px;">
-            <img src="./images/import-css.png" style="float: right;width:48%;margin-top:10px;">
-            <p style="line-height: 2.2; font-size: 28px; margin-right: 100px;">
-                <span style="font-weight: 700; font-size: 35px;">
-                    مزیت:</span> 
-                    <br/> 
-                <span style="margin-right: 100px;"><i class="ion-ios-checkmark-outline" style="font-size: 30px; color:#c69; margin-left: 10px;"></i>فقط یک درخواست HTTP</span>
-                <span style="margin-right: 100px;"><i class="ion-ios-checkmark-outline" style="font-size: 30px; color:#c69; margin-left: 10px;"></i>سرعت بالای لود شدن صفحه </span>
-                <span style="margin-right: 100px;"><i class="ion-ios-checkmark-outline" style="font-size: 30px; color:#c69; margin-left: 10px;"></i>تاثیر در سئو </span>
-            </p>
-            <p class="num" style="margin: 500px 30px 100px 0;">۹</p>
-            </ol>
-        </div>
-
-
-        <div class="step slide oposit" data-x="11000" data-y="-22000" data-scale="4">
-            <h1 style="font-size: 110px; text-align: center;">جمع‌بندی</h1>
-        </div>
-
-
-        <div class="step slide oposit-text1" data-x="9700" data-y="-1500" data-scale="6">
-            <h1 style="font-size: 40px; color: #555; letter-spacing: 2;">جمع‌بندی</h1>
-            <div style="margin: 150px 0 150px 0;">
-                <img src="./images/color-1c4aab2b.png" style="margin-top:-20px; float: left; position: relative; margin-right: 25px;align-content: center;" width="230px;"/>
-                <img src="./images/less_logo.png" style=" float: left; margin-right: 25px;margin-left: 15px; position: relative; align-content: center;" width=250px;> 
-                <img src="./images/stylus-logo.svg" style=" float: left; margin-left: 15px; position: relative; align-content: center;" width="230px;">
-            </div>
-            <p class="num" style="margin: 500px 30px 100px 0;">۱۰</p>
-
-        </div>
-
-        <div class="step slide" style="padding-left:250px;" data-x="-10000" data-y="-1500">
-            <h1 style="margin:35px 50px 10px 10px; color: #555; font-size: 38px;">منبع</h1>
-            <div style="direction: ltr; line-height: 1.6; font-size: 26px;">
-                <br/>
-                <br/>
-                <a href="http://angular.io/" style=" color: rgb(3, 96, 188);  margin-top: 50px; background-color: rgba(131, 245, 219, 0.43);">http://sass-lang.com/</a>
-            </div>
-            <div style="direction: rtl; position:absolute; bottom:50px; right:50px;font-size: 25px; color: #555; line-height: 0.5; ">
-                <a href="https://github.com/SamaneYaghoobi/Sass-presentation"><i class="ion-social-github" style="font-size: 33px;"></i> available on Github </a>
-            </div>
-
-
-
-        </div>
-
-        <div class="step slide oposit-text" data-x="-15000" data-y="-4000" data-rotate="90" data-scale="6">
-
-            <p style="text-align: center; direction: ltr; line-height: 2.5; color: rgb(25, 118, 210); font-size: 100px; margin-top: 40px;">Any Question?
-                <br><img src="./images/seal-color-a.png" style="width: 300px;">
-
-            </p>
-        </div>
-
-       
-
-        <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="80"></div>
     </div>
-   
-    <script src="js/impress.js" type="text/javascript">
 
 
-    </script>
-    <script type="text/javascript">
-        impress().init();
+    <div class="step slide oposit-text" data-x="-8800" data-y="-200" data-scale="2">
+        <img src="./images/Tor_logo.png" style="float: left;margin-top:60px; width:15%">
+        <h6 style="margin:100px -30px 0 10px; font-size: 45px; color: #555;">معرفی و آشنایی با سرویس Tor</h6>
+        <ol style="float: right; color: #555; direction: rtl; line-height: 2.5; font-size: 33px; margin: 80px 50px 0 15px;">
+            <i class="ion-android-checkbox-blank" style="font-size: 30px; color:#c69; margin-left: 20px;"></i>The Onion
+            Router (Tor)
+            <br><i class="ion-android-checkbox-blank" style="font-size: 30px; color:#c69; margin-left: 20px;"></i> از
+            آزمایشگاه تحقیقات نیروی دریایی ایالات متحده تا دولت سوئد!
+            <br><i class="ion-android-checkbox-blank" style="font-size: 30px; color:#c69; margin-left: 20px;"></i>محبوب
+            ترین و امن ترین ابزار برای وب گردی با هویت ناشناس
+        </ol>
+        <p class="num" style="margin: 0 0px 120px 0;">۱</p>
+    </div>
 
-    </script>
-    
+    <div id="its" class="step slide padd" data-x="-5500" data-y="3500" data-rotate="90" data-scale="6">
+        <img src="./images/Tor_logo.png" style="float: left;margin-top:20px; width:15%">
+        <h6 style="margin:40px 0 0 10px; font-size: 45px; color: #555;">سرویس Tor چگونه کار می‌کند؟</h6>
+        <img src="./css/how-tor-works21.jpg"
+             style="width:87%;float:left;margin-left:65px;margin-top:35px;border-radius:5%;">
+        <p class="num" style="margin: 500px 30px 15px 0;">۲</p>
+    </div>
+
+    <div class="step slide type " data-x="2550" data-y="4850" data-z="-3000" data-rotate="180" data-scale="6">
+        <div style="position: absolute; top: 25px; right: 20px;">
+            <img src="./css/Asymmetric_encryption_(colored).png" style="float: left; width:15%;margin-left:20px;">
+            <h1 style="font-size: 40px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0); margin: 20px 20px 0 0; color: #555; float: right; color: #555;">
+                رمزنگاری دو کلیده؟</h1>
+        </div>
+        <p class="num" style="margin: 500px 30px 15px 0;">۳</p>
+    </div>
+
+    <div class="step slide type1 " data-x="12550" data-y="8850" data-z="-1000" data-rotate="90" data-scale="6">
+        <div style="position: absolute; top: 25px; right: 20px;">
+            <img src="./css/Asymmetric_encryption_(colored).png" style="float: left; width:15%;margin-left:20px;">
+            <h1 style="font-size: 40px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0); margin: 20px 20px 0 0; color: #555; float: right; color: #555;">
+                شیوه استفاده رمزنگاری دو کلیده در Tor</h1>
+        </div>
+        <p class="num" style="margin: 500px 30px 15px 0;">۴</p>
+    </div>
+
+    <div class="step slide oposit-text" data-x="5000" data-y="-5000" data-rotate="1500" data-scale="2">
+        <img src="./images/Tor_logo.png" style="float: left;width:15%">
+        <h1 style="margin:30px 10px 10px 10px; color: #555; font-size: 38px;">پل(Bridge) چیست؟</h1>
+        <h4 style="margin-top: 60px; line-height: 2; font-size: 28px; line-height: 3;"><i
+                class="ion-android-checkbox-blank" style="font-size: 30px; color:#6a6a6a; margin-left: 10px;"></i>
+            دلایل استفاده از پل</h4>
+        <ol style="float: right;list-style-type: square; margin-right:8%;">
+            <li style="line-height: 1.5; font-size: 28px;">
+                بلاک شدن شبکه‌ی Tor توسط سرویس دهنده‌های اینترنت
+            </li>
+            <li style="line-height: 1.5; font-size: 28px;">
+                جلوگیری از فهمیدن سرویس دهنده‌های اینترنت در مورد استفاده از Tor
+            </li>
+        </ol>
+        <p style="line-height: 2.2; font-size: 28px;margin-top:15%;">
+                <span style="font-weight: 700; font-size: 35px;">
+                    سه راه دریافت پل:</span>
+            <br/>
+            <span style="margin-right: 8%;"><i class="ion-arrow-left-c"
+                                               style="font-size: 30px; color:#c69; margin-left: 10px;"></i>از طریق تنظیمات شبکه‌ی Tor(مخصوص کاربران مرورگر Tor)</span>
+            <br/>
+            <span style="margin-right: 8%;"><i class="ion-arrow-left-c"
+                                               style="font-size: 30px; color:#c69; margin-left: 10px;"></i>از طریق سایت دریافت پل (bridges.torproject.org)</span>
+            <br/>
+            <span style="margin-right: 8%;"><i class="ion-arrow-left-c"
+                                               style="font-size: 30px; color:#c69; margin-left: 10px;"></i>درخواست از طریق ایمیل (bridges@torproject.org)</span>
+            <br/>
+            <span style="margin-right: 13%;"><i class="ion-arrow-left-b"
+                                                style="font-size: 30px; color:#c69; margin-left: 10px;"></i>get transport obfs4</span>
+        </p>
+        <p class="num" style="margin: 500px 30px 100px 0;">۴</p>
+    </div>
+
+    <div class="step slide oposit-text" data-x="5000" data-y="-8000" data-rotate="1450" data-scale="4">
+        <img src="./images/Tor_logo.png" style="float: left;width:15%">
+        <h1 style="margin:30px 10px 10px 10px; color: #555; font-size: 38px;">تفاوت میان Tor و vpn</h1>
+        <h4 style="margin-top: 40px;font-size: 30px; line-height: 3;">
+            <i class="ion-android-checkbox-blank"
+               style="font-size: 30px; color:#6a6a6a; margin-left: 10px;">
+            </i>
+            مزایا و معایب استفاده از Tor
+        </h4>
+        <p style="line-height: 2; font-size: 20px;margin-right:5%;">
+            <i class="ion-android-checkmark-circle"
+               style="font-size: 25px; color: #c69; margin-left: 10px;">
+            </i>
+            Tor یک سرویس رایگان است
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="ion-android-close"
+               style="font-size: 25px; color: #c69; margin-left: 10px;">
+            </i>
+            توسط برخی از سرویس های وب مسدود شده است
+        </p>
+        <p style="line-height: 2; font-size: 20px;margin-right:5%;">
+            <i class="ion-android-checkmark-circle"
+               style="font-size: 25px; color: #c69; margin-left: 10px;">
+            </i>
+            به نسبت vpn ها خیلی سخت‌تر مسدود می‌شود
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="ion-android-close"
+               style="font-size: 25px; color: #c69; margin-left: 10px;">
+            </i>
+            به نسبت vpn سرعت کمتری دارد
+        </p>
+        <p style="line-height: 2; font-size: 20px;margin-right:5%;">
+            <i class="ion-android-checkmark-circle"
+               style="font-size: 25px; color: #c69; margin-left: 8px;">
+            </i>
+            Tor از حریم شخصی کاربر حفاظت می‌کند
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="ion-android-close"
+               style="font-size: 25px; color: #c69; margin-left: 10px;">
+            </i>
+            آسیب‌پذیر بودن در برابر پروتکل http
+        </p>
+        <br/>
+        <br/>
+        <i class="ion-android-checkbox-blank"
+           style="font-size: 30px; color:#6a6a6a; margin-left: 10px;">
+        </i>
+        مزایا و معایب استفاده از vpn
+        <p style="line-height: 2; font-size: 20px;margin-right:5%;">
+            <i class="ion-android-checkmark-circle"
+               style="font-size: 25px; color: #c69; margin-left: 10px;">
+            </i>
+            در مقایسه با Tor سرعت بالاتری دارد
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="ion-android-close"
+               style="font-size: 25px; color: #c69; margin-left: 10px;">
+            </i>
+            امنیت ضعیفی دارند
+        </p>
+        <p style="line-height: 2; font-size: 20px;margin-right:5%;">
+            <i class="ion-android-checkmark-circle"
+               style="font-size: 25px; color: #c69; margin-left: 10px;">
+            </i>
+            با استفاده از vpn، کاربر ناشناس باقی می‌ماند(همچنین Tor)
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="ion-android-close"
+               style="font-size: 25px; color: #c69; margin-left: 10px;">
+            </i>
+            اکثریت غیر رایگان هستند
+        </p>
+        <p class="num" style="margin: 500px 30px 100px 0;">۵</p>
+    </div>
+
+    <div class="step slide oposit-text" data-x="2300" data-y="-3300" data-rotate="1300" data-scale="2">
+        <img src="./images/Tor_logo.png" style="float: left;width:15%">
+        <h1 style="margin:30px 10px 10px 10px; color: #555; font-size: 38px;">سرویس‌های مخفی Tor</h1>
+        <h4 style="margin-top: 60px; line-height: 2; font-size: 28px; line-height: 3;"><i
+                class="ion-android-checkbox-blank" style="font-size: 30px; color:#6a6a6a; margin-left: 10px;"></i>سرویس‌های
+            مخفی Tor چگونه کار می‌کنند؟
+        </h4>
+        <p style="line-height: 1.5; font-size: 28px;"><i class="ion-arrow-left-c"
+                                                         style="font-size: 25px; color: #c69; margin-left: 10px;"></i>
+            گره معرف
+        </p>
+        <p style="line-height: 1.5; font-size: 28px;"><i class="ion-arrow-left-c"
+                                                         style="font-size: 25px; color: #c69; margin-left: 10px;"></i>
+            Destributed Hash Table
+        </p>
+        <p style="line-height: 1.5; font-size: 28px;"><i class="ion-arrow-left-c"
+                                                         style="font-size: 25px; color: #c69; margin-left: 10px;"></i>
+            گره محل ملاقات
+        </p>
+        <img src="./css/Tor-hidden-service-protocol-overview.png" style="width:88%;float: left;margin-top:40px;">
+        <p class="num" style="margin: 500px 30px 100px 0;">۶</p>
+    </div>
+
+    <div class="step slide oposit-text" style="height:1000px" data-x="-5300" data-y="-6000" data-rotate="1200"
+         data-scale="4">
+        <img src="./images/Tor_logo.png" style="float: left;width:15%">
+        <h1 style="margin:30px 10px 10px 10px; color: #555; font-size: 38px;">دارک وب و دیپ وب چیست؟</h1>
+        <h4 style="margin-top: 30px; line-height: 2; font-size: 28px; line-height: 3;"><i
+                class="ion-android-checkbox-blank" style="font-size: 30px; color:#6a6a6a; margin-left: 10px;"></i>دیپ وب
+        </h4>
+        <p style="line-height: 1.5; font-size: 28px;"><i class="ion-arrow-left-c"
+                                                         style="font-size: 35px; color: #c69; margin-left: 10px;"></i>به
+            علت ایندکس نشدن در موتورهای جست و جوی معمولی و دسترسی فقط از طریق شبکه‌ Tor به آن دیپ وب گفته می‌شود.
+        </p>
+        <h4 style="margin-top: 30px; line-height: 2; font-size: 28px; line-height: 3;"><i
+                class="ion-android-checkbox-blank" style="font-size: 30px; color:#6a6a6a; margin-left: 10px;"></i>دارک
+            وب
+        </h4>
+        <p style="line-height: 1.5; font-size: 26px;"><i class="ion-arrow-left-c"
+                                                         style="font-size: 35px; color: #c69; margin-left: 10px;"></i>به
+            علت ناشناس بودن و امن بودن شبکه‌ی Tor برخی افراد از آن به منظور کارهای غیرقانونی استفاده می‌کنند به همین جهت این
+            سرویس به نام دارک وب هم شناخته می‌شود.
+        </p>
+        <img src="./css/dark-web-vs-surface-web-vs-deep-web-1024x412.png"
+             style="width:78%;float: left;margin-top:10px;margin-left:100px;">
+        <p class="num" style="margin: 500px 30px 100px 0;">۷</p>
+        </ol>
+    </div>
+
+
+    <div class="step slide oposit-text" data-x="-5300" data-y="-10000" data-rotate="1100" data-scale="2">
+        <img src="./images/Tor_logo.png" style="float: left;width:15%">
+        <h1 style="margin:30px 10px 10px 10px; color: #555; font-size: 38px;">نحوه‌ی استفاده از سرویس Tor</h1>
+        <h4 style="margin-top: 30px; line-height: 2; font-size: 28px; line-height: 3;">
+            <i
+                    class="ion-android-checkbox-blank" style="font-size: 30px; color:#6a6a6a; margin-left: 10px;">
+            </i>
+            Tor browser
+        </h4>
+        <p style="line-height: 1.5; font-size: 25px;">
+            <i class="ion-arrow-left-c"
+               style="font-size: 25px; color: #c69; margin-left: 10px;">
+            </i>مرورگر
+            اختصاصی Tor برای کاربران کامپیوتر
+        </p>
+        <h4 style="margin-top: 30px; line-height: 2; font-size: 28px; line-height: 3;">
+            <i
+                    class="ion-android-checkbox-blank" style="font-size: 30px; color:#6a6a6a; margin-left: 10px;">
+            </i>Orbot(android)
+        </h4>
+        <p style="line-height: 1.5; font-size: 25px;">
+            <i class="ion-arrow-left-c"
+               style="font-size: 25px; color: #c69; margin-left: 10px;">
+            </i>
+            کلاینت اختصاصی Tor برای کاربران اندروید
+        </p>
+        <h4 style="margin-top: 30px; line-height: 2; font-size: 28px; line-height: 3;">
+            <i
+                    class="ion-android-checkbox-blank" style="font-size: 30px; color:#6a6a6a; margin-left: 10px;">
+            </i>Orfox(android)
+        </h4>
+        <p style="line-height: 1.5; font-size: 25px;">
+            <i class="ion-arrow-left-c"
+               style="font-size: 25px; color: #c69; margin-left: 10px;">
+            </i>مرورگر
+            اختصاصی Tor برای کاربران اندروید
+        </p>
+        <br/>
+        <p>دانلود:
+            <a href="https://guardianproject.info/apps/" style="background-color: transparent; color: rgb(3, 96, 188);">
+                /https://guardianproject.info/apps
+            </a>
+        </p>
+        <br/>
+        <p class="num" style="margin: 500px 30px 100px 0;">۸</p>
+        </ol>
+    </div>
+    <div class="step slide" style="padding-left:100px;" data-x="-10000" data-y="-1500">
+        <h1 style="margin:35px 50px 10px 10px; color: #555; font-size: 38px;">منابع</h1>
+        <div style="float:left;direction: ltr; line-height: 1.6; font-size: 26px; margin-right: 5%;">
+            <br/>
+            <br/>
+            <a href="https://en.wikipedia.org/wiki/Onion_routing"
+               style=" color: rgb(3, 96, 188);  margin-top: 50px; background-color: #f4f6f7;">https://en.wikipedia.org/wiki/Onion_routing</a>
+            <br/>
+            <br/>
+            <a href="https://molaei.org/tor-hidden-services/"
+               style=" color: rgb(3, 96, 188);  margin-top: 50px; background-color: #f4f6f7;">https://molaei.org/tor-hidden-services</a>
+            <br/>
+            <br/>
+            <a href="https://2019.www.torproject.org/docs/documentation.html.en"
+               style=" color: rgb(3, 96, 188);  margin-top: 50px; background-color: #f4f6f7;">https://2019.www.torproject.org/docs/documentation.html.en</a>
+            <br/>
+            <br/>
+            <a href="https://2019.www.torproject.org/docs/faq.html.en"
+               style=" color: rgb(3, 96, 188);  margin-top: 50px; background-color: #f4f6f7;">https://2019.www.torproject.org/docs/faq.html.en</a>
+        </div>
+        <div style="direction: rtl; position:absolute; bottom:50px; right:50px;font-size: 25px; color: #555; line-height: 0.5; ">
+            <a href="https://github.com/Alireza-Sampour/Tor-presentation" style="background-color: #f4f6f7;"><i
+                    class="ion-social-github"
+                    style="font-size: 33px;"></i> available on
+                Github </a>
+        </div>
+
+
+    </div>
+
+    <div class="step slide oposit-text" data-x="-15000" data-y="-4000" data-rotate="90" data-scale="6">
+
+        <p style="text-align: center; direction: ltr; line-height: 2.5; color: rgb(25, 118, 210); font-size: 100px; margin-top: 40px;">
+            Any Question?
+            <br><img src="./images/Tor_logo.png" style="width: 300px;">
+
+        </p>
+    </div>
+
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="80"></div>
+</div>
+
+<script src="js/impress.js" type="text/javascript">
+
+
+</script>
+<script type="text/javascript">
+    impress().init();
+
+</script>
+
 </body>
 
 </html>

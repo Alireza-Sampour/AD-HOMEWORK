@@ -40,7 +40,6 @@
 }
 
 
-
 p,
 html,
 body,
@@ -132,7 +131,6 @@ video {
 }
 
 
-
 /* HTML5 display-role reset for older browsers */
 
 article,
@@ -177,7 +175,6 @@ table {
 }
 
 
-
 /*
     Now here is when interesting things start to appear.
 
@@ -197,7 +194,6 @@ body {
 }
 
 
-
 /*
     Now let's bring some text styles back ...
 */
@@ -211,7 +207,6 @@ i,
 em {
     font-style: italic
 }
-
 
 
 /*
@@ -238,7 +233,6 @@ a:focus {
     background: rgba(255, 255, 255, 1);
     text-shadow: -1px -1px 2px rgba(100, 100, 100, 0.5);
 }
-
 
 
 /*
@@ -275,7 +269,6 @@ a:focus {
 }
 
 
-
 /*
     Now let's style the presentation steps.
 
@@ -300,7 +293,6 @@ a:focus {
 }
 
 
-
 /*
     ... and we enhance the styles for impress.js.
 
@@ -321,7 +313,6 @@ a:focus {
 .impress-enabled .step.active {
     opacity: 1
 }
-
 
 
 /*
@@ -367,7 +358,6 @@ a:focus {
 }
 
 
-
 /*
     And now we start to style each step separately.
 
@@ -411,7 +401,6 @@ a:focus {
 }
 
 
-
 /*
     Second step is nothing special, just a text with a link, so it doesn't need
     any special styling.
@@ -437,7 +426,6 @@ a:focus {
 }
 
 
-
 /*
     'Tiny ideas' just need some tiny styling.
 */
@@ -448,7 +436,6 @@ a:focus {
 }
 
 
-
 /*
     This step has some animated text ...
 */
@@ -456,7 +443,6 @@ a:focus {
 #ing {
     width: 500px
 }
-
 
 
 /*
@@ -474,7 +460,6 @@ a:focus {
 }
 
 
-
 /*
     ... and we want 'positioning` word to move up a bit when the step gets
     `present` class ...
@@ -487,7 +472,6 @@ a:focus {
     -o-transform: translateY(-10px);
     transform: translateY(-10px);
 }
-
 
 
 /*
@@ -509,7 +493,6 @@ a:focus {
 }
 
 
-
 /*
     ... and 'scaling' to scale down after another quarter of a second.
 */
@@ -529,7 +512,6 @@ a:focus {
 }
 
 
-
 /*
     The 'imagination' step is again some boring font-sizing.
 */
@@ -541,7 +523,6 @@ a:focus {
 #imagination .imagination {
     font-size: 78px;
 }
-
 
 
 /*
@@ -570,7 +551,6 @@ a:focus {
 }
 
 
-
 /*
     And the "it's in 3D" step again brings some 3D typography - just for fun.
 
@@ -588,7 +568,6 @@ a:focus {
     -o-transform-style: preserve-3d;
     transform-style: preserve-3d;
 }
-
 
 
 /*
@@ -674,7 +653,6 @@ a:focus {
 }
 
 
-
 /*
     The last step is an overview.
     There is no content in it, so we make sure it's not visible because we want
@@ -687,7 +665,6 @@ a:focus {
 }
 
 
-
 /*
     We also make other steps visible and give them a pointer cursor using the
     `impress-on-` class.
@@ -697,8 +674,6 @@ a:focus {
     opacity: 1;
     cursor: pointer;
 }
-
-
 
 
 /*
@@ -799,7 +774,6 @@ a:focus {
 }
 
 
-
 /*
     Now we 'enable' the hint when presentation is initialized ...
 */
@@ -807,7 +781,6 @@ a:focus {
 .impress-enabled .hint {
     display: block
 }
-
 
 
 /*
@@ -843,7 +816,6 @@ a:focus {
 }
 
 
-
 /*
     And as the last thing there is a workaround for quite strange bug.
     It happens a lot in Chrome. I don't remember if I've seen it in Firefox.
@@ -873,7 +845,6 @@ a:focus {
 .impress-enabled #impress {
     pointer-events: auto
 }
-
 
 
 /*
@@ -933,7 +904,8 @@ a {
 
 #subject {
     font-family: 'vazirb';
-    margin-right: 60px;margin-bottom: 70px;
+    margin-right: 60px;
+    margin-bottom: 70px;
     font-weight: 700;
     font-size: 50px;
 }
@@ -944,7 +916,8 @@ a {
     width: 250px;
 }
 
-#dars {}
+#dars {
+}
 
 #ang_logo {
     width: 100px;
@@ -954,14 +927,13 @@ a {
     color: rgb(25, 118, 210);
     float: right;
     font-size: 25px;
-    margin: 30px 50px 0 0;
+    margin: 40px 35px 0 0;
 }
-
 
 
 .fehrest2 {
     color: rgb(102, 102, 102);
-    width: 250px;
+    width: 315px;
     margin: 0 28% 0 0;
     list-style: disc;
     font-size: 70%;
@@ -970,9 +942,9 @@ a {
 
 .image-logo {
 
-    width: 370px;
+    width: 300px;
     float: left;
-    margin: 100px 0 50px 70px;
+    margin: 100px 0 50px 40px;
     box-sizing: content-box;
 }
 
@@ -995,11 +967,10 @@ a {
 }
 
 
-
 .oposit {
     width: 900px;
     height: 300px;
-    background-color: rgba( 58, 58, 58, 0);
+    background-color: rgba(58, 58, 58, 0);
     border: 0px solid rgba(0, 0, 0, 0);
     border-radius: 10px;
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
@@ -1038,14 +1009,15 @@ a {
     padding: 80px 0 0 0;
     width: 900px;
     height: 900px;
-    background-color: rgba( 58, 58, 58, 0);
+    background-color: rgba(58, 58, 58, 0);
     border: 0px solid rgba(0, 0, 0, 0);
     border-radius: 10px;
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
 
 }
 
-.back-typescript {}
+.back-typescript {
+}
 
 .typescript {
     width: 1600px;
@@ -1054,15 +1026,24 @@ a {
 
 .type {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
-    background-image: linear-gradient(to left, rgba(244, 246, 247, 0.7), rgba(244, 246, 247, 0.85), rgba(244, 246, 247, 0.7)), url("../images/install.jpg");
-    background-position: center;
+    background-image: url("1200px-Public_key_encryption.svg");
+    background-position: 55% 65%;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 55%;
     padding: 0;
-    width: 1000px;
-    height: 600px;
+    width: 900px;
+    height: 700px;
 }
-
+.type1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+    background-image: url("Onion_diagram11.png");
+    background-position: 65% 75%;
+    background-repeat: no-repeat;
+    background-size: 85%;
+    padding: 0;
+    width: 900px;
+    height: 700px;
+}
 .txt {
     padding: 0;
 
@@ -1079,7 +1060,7 @@ a {
     padding: 150px 10px 10px 10px;
     width: 900px;
     height: 900px;
-    background-color: rgba( 58, 58, 58, 0);
+    background-color: rgba(58, 58, 58, 0);
     border: 0px solid rgba(0, 0, 0, 0);
     border-radius: 10px;
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
@@ -1091,14 +1072,15 @@ a {
     padding: 100px 10px 10px 10px;
     width: 900px;
     height: 900px;
-    background-color: rgba( 58, 58, 58, 0);
+    background-color: rgba(58, 58, 58, 0);
     border: 0px solid rgba(0, 0, 0, 0);
     border-radius: 10px;
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
 
 }
 
-.google {}
+.google {
+}
 
 .oposit-text1 {
 
@@ -1106,7 +1088,7 @@ a {
     padding: 100px 0 0 0;
     width: 900px;
     height: 800px;
-    background-color: rgba( 58, 58, 58, 0);
+    background-color: rgba(58, 58, 58, 0);
     border: 0px solid rgba(0, 0, 0, 0);
     border-radius: 10px;
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
@@ -1146,9 +1128,9 @@ a {
 }
 
 .type2 {
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
     background-image: linear-gradient(to left, rgba(244, 246, 247, 0.6), rgba(244, 246, 247, 0.94), rgba(244, 246, 247, 0.6)), url("getting-started-with-angular-2-and-typescript-7-638.jpg");
-     background-position: center;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 0;
@@ -1176,25 +1158,31 @@ a {
     padding: 80px 0 0 0;
     width: 950px;
     height: 900px;
-    background-color: rgba( 58, 58, 58, 0);
+    background-color: rgba(58, 58, 58, 0);
     border: 0px solid rgba(0, 0, 0, 0);
     border-radius: 10px;
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
 }
 
 .oposit-texyt {
-     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
-       padding: 100px 0 0 0;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+    padding: 100px 0 0 0;
 
     width: 950px;
     height: 1000px;
-    background-color: rgba( 58, 58, 58, 0);
+    background-color: rgba(58, 58, 58, 0);
     border: 0px solid rgba(0, 0, 0, 0);
     border-radius: 10px;
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0);
 }
 
 .details1 {
-     font-size: 25px;
+    font-size: 25px;
     line-height: 28px;
 }
+/** { background-color: rgba(255,0,0,.2); }*/
+/** * { background-color: rgba(0,255,0,.2); }*/
+/** * * { background-color: rgba(0,0,255,.2); }*/
+/** * * * { background-color: rgba(255,0,255,.2); }*/
+/** * * * * { background-color: rgba(0,255,255,.2); }*/
+/** * * * * * { background-color: rgba(255,255,0,.2); }*/
