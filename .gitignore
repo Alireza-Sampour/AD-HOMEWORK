@@ -14,7 +14,7 @@ tmp/
 local.properties
 .classpath
 .settings/
-.idea
+.idea/
 .loadpath
 
 # External tool builders
