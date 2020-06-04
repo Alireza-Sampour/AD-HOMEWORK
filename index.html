@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/font-owsome/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/ionicon/css/ionicons.min.css" type="text/css">
 
-    <title>مقدمه‌ای بر Tor</title>
+    <title>Algorithm Design-HomeWork 4</title>
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic"
           rel="stylesheet" type="text/css">
     <link href="css/impress-demo.css" rel="stylesheet" type="text/css">
@@ -31,257 +31,3238 @@
 <div id="impress">
 
     <div id="bored" class="step slide padd" data-x="-1000" data-y="-1500">
-        <p style=" font-size: 35px; line-height: 27px; margin-top: 30px; ">
-            عنوان ارائه:</p>
-        <p id="subject"><br>مقدمه‌ای بر <span style="color: #c69; font-family: 'vazirb';">Tor</span></p>
-        <img src="css/main-pic.png" class="image">
+        <p id="subject"><br>Algorithm Design 982, HomeWork<span style="color: #c69; font-family: 'vazirb';"> 4</span>
+        </p>
+
 
         <div class="init_page">
 
-            <div id="name">علیرضا سام‌پور ماهانی</div>
-
-            <div class="details1">
-                <br>دانشجوی رشته‌ی مهندسی نرم‌افزار
-            </div>
-            <p class="details"><br><br>درس روش پژوهش و ارائه</p>
-            <p class="details"> زمان: ۱۱ خرداد ۹۸</p>
-
+            <div class="name">علیرضا سام‌پور ماهانی</div>
+            <br/>
+            <div class="name">محمدمهدی متین‌فر</div>
 
         </div>
-        <img src="css/University_of_Ilam_Logo.png" style="float: left; margin-top: 0px; width: 120px; ">
+        <img src="css/University_of_Ilam_Logo.png"
+             style="float: left; margin-top: 20%;margin-right: 20%; width: 120px; ">
 
     </div>
-
+    <!--q1-->
     <div class="step slide" data-x="0" data-y="-1500">
-        <img src="css/favicon.png" class="image-logo">
-        <div class="fehrest1">
-            <ol>
-                <li class="lis">
-                    مقدمه
-                    <ol class="fehrest2">
-                        <li>آشنایی و معرفی Tor</li>
-                    </ol>
-                </li>
-                <li class="lis">
-                    معرفی شبکه‌ی Tor
-                    <ol class="fehrest2">
-                        <li>Tor چگونه کار می‌کند؟</li>
-                        <li>توضیحی در مورد رمزنگاری دو کلیده</li>
-                        <li>پل چیست؟</li>
-                        <li>تفاوت میان Tor و vpn</li>
-                    </ol>
-                </li>
-                <li class="lis">سرویس‌های مخفی Tor
-                    <ol class="fehrest2">
-                        <li>سرویس‌های مخفی Tor چگونه کار می‌کنند؟</li>
-                        <li>دارک وب و دیپ وب چیست؟</li>
-                    </ol>
-                </li>
-                <li class="lis">نحوه‌ی استفاده
-                    <ol class="fehrest2">
-                        <li>معرفی Orbot, Orfox, Tor Browser</li>
-                    </ol>
-                </li>
-                <li class="lis">پرسش و پاسخ</li>
-            </ol>
+        <p style="margin-top: 8%;margin-right: 5%;">
+            سوال اول:
+        <p class="dec">
+            برای ماتریس های زیر با استفاده از برنامه نویسی پویا ترتیب ضرب بهینه را نشان دهید، دقت کنید که تمام مراحل را
+            نشان دهید و نحوه پر شدن جدول در هر مرحله را نشان دهید.
+        </p>
+        <p class="info">
+            <math xmlns="http://www.w3.org/1998/Math/MathML">
+                <mstyle mathcolor="WildStrawberry">
+                    <msub>
+                        <mi>A</mi>
+                        <mn>53</mn>
+                    </msub>
+                    <mo>&#x00D7;<!-- × --></mo>
+                    <msub>
+                        <mi>B</mi>
+                        <mn>36</mn>
+                    </msub>
+                    <mo>&#x00D7;<!-- × --></mo>
+                    <msub>
+                        <mi>C</mi>
+                        <mi>64</mi>
+                    </msub>
+                    <mo>&#x00D7;<!-- × --></mo>
+                    <msub>
+                        <mi>D</mi>
+                        <mn>47</mn>
+                    </msub>
+                    <mo>&#x00D7;<!-- × --></mo>
+                    <msub>
+                        <mi>E</mi>
+                        <mi>78</mi>
+                    </msub>
+                    <mo>&#x00D7;<!-- × --></mo>
+                    <msub>
+                        <mi>F</mi>
+                        <mi>89</mi>
+                    </msub>
+                </mstyle>
+            </math>
+        <p/>
+        <div style="margin-top: 10%; margin-right: 10%;">
+            <p>توضیحات:</p>
+            <p style="font-size: 20px;">تعداد ضرب مورد نیاز برای ضرب دو ماتریس
+                <math>
+                    <msub>
+                        <mi>B</mi>
+                        <mi>jk</mi>
+                    </msub>
+                </math>
+                و
+                <math>
+                    <msub>
+                        <mi>A</mi>
+                        <mi>ij</mi>
+                    </msub>
+                </math>
+                برابر با i
+                <math>
+                    <mstyle mathcolor="WildStrawberry">
+                        <mo>&#x00D7;<!-- × --></mo>
+                        </mstyle>
+                </math>
+                j
+                <math>
+                    <mstyle mathcolor="WildStrawberry">
+                        <mo>&#x00D7;<!-- × --></mo>
+                        </mstyle>
+                </math>
+                k
+                میباشد
+                <br/>
+                برای محاسبه تعداد ضرب های مورد نیاز برای هر دو ماتریس از ماتریسی به نام M و شیوه‌ی زیر استفاده میکنیم:
+            </p>
+            <br/>
+            <div style="float:left;font-size: 25px; margin-left: 5%;">
+                <img src="images/1.png" width="750">
+            </div>
+        </div>
+    </div>
+    <div class="step slide" data-x="1000" data-y="-1500">
+        <div class="dec">
+            <p>ابتدا قطر اصلی را صفر و شروع به پر کردن قطر بالای قطر اصلی میکنیم</p>
+            <br/>
+            <p style="float: left; direction: ltr;">
+                <img src="images/2.png">
+<!--                <math xmlns="http://www.w3.org/1998/Math/MathML">-->
+<!--                    <mstyle displaystyle="true" scriptlevel="0">-->
+<!--                        <mi>M</mi>-->
+<!--                        <mo stretchy="false">[</mo>-->
+<!--                        <mi>1</mi>-->
+<!--                        <mo>,</mo>-->
+<!--                        <mi>2</mi>-->
+<!--                        <mo stretchy="false">]</mo>-->
+<!--                        <mo>=</mo>-->
+<!--                        <mrow>-->
+<!--                            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">-->
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>1</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>1</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>0</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>1</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>2</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>90</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>90</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+<!--                            </mtable>-->
+<!--                            <mo fence="true" stretchy="true" symmetric="true"></mo>-->
+<!--                        </mrow>-->
+<!--                    </mstyle>-->
+<!--                </math>-->
+
+<!--                <math xmlns="http://www.w3.org/1998/Math/MathML">-->
+<!--                    <mstyle displaystyle="true" scriptlevel="0">-->
+<!--                        <mi>M</mi>-->
+<!--                        <mo stretchy="false">[</mo>-->
+<!--                        <mi>2</mi>-->
+<!--                        <mo>,</mo>-->
+<!--                        <mi>3</mi>-->
+<!--                        <mo stretchy="false">]</mo>-->
+<!--                        <mo>=</mo>-->
+<!--                        <mrow>-->
+<!--                            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">-->
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>1</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>2</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>3</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>72</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>72</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+<!--                            </mtable>-->
+<!--                            <mo fence="true" stretchy="true" symmetric="true"></mo>-->
+<!--                        </mrow>-->
+<!--                    </mstyle>-->
+<!--                </math>-->
+
+<!--                <math xmlns="http://www.w3.org/1998/Math/MathML">-->
+<!--                    <mstyle displaystyle="true" scriptlevel="0">-->
+<!--                        <mi>M</mi>-->
+<!--                        <mo stretchy="false">[</mo>-->
+<!--                        <mi>3</mi>-->
+<!--                        <mo>,</mo>-->
+<!--                        <mi>4</mi>-->
+<!--                        <mo stretchy="false">]</mo>-->
+<!--                        <mo>=</mo>-->
+<!--                        <mrow>-->
+<!--                            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">-->
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>2</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>3</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>4</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>168</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>168</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+<!--                            </mtable>-->
+<!--                            <mo fence="true" stretchy="true" symmetric="true"></mo>-->
+<!--                        </mrow>-->
+<!--                    </mstyle>-->
+<!--                </math>-->
+
+<!--                <math xmlns="http://www.w3.org/1998/Math/MathML">-->
+<!--                    <mstyle displaystyle="true" scriptlevel="0">-->
+<!--                        <mi>M</mi>-->
+<!--                        <mo stretchy="false">[</mo>-->
+<!--                        <mi>4</mi>-->
+<!--                        <mo>,</mo>-->
+<!--                        <mi>5</mi>-->
+<!--                        <mo stretchy="false">]</mo>-->
+<!--                        <mo>=</mo>-->
+<!--                        <mrow>-->
+<!--                            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">-->
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>3</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>4</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>5</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>224</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>224</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+<!--                            </mtable>-->
+<!--                            <mo fence="true" stretchy="true" symmetric="true"></mo>-->
+<!--                        </mrow>-->
+<!--                    </mstyle>-->
+<!--                </math>-->
+
+<!--                <math xmlns="http://www.w3.org/1998/Math/MathML">-->
+<!--                    <mstyle displaystyle="true" scriptlevel="0">-->
+<!--                        <mi>M</mi>-->
+<!--                        <mo stretchy="false">[</mo>-->
+<!--                        <mi>5</mi>-->
+<!--                        <mo>,</mo>-->
+<!--                        <mi>6</mi>-->
+<!--                        <mo stretchy="false">]</mo>-->
+<!--                        <mo>=</mo>-->
+<!--                        <mrow>-->
+<!--                            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">-->
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>6</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>6</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>4</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>5</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>6</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>504</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>504</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+<!--                            </mtable>-->
+<!--                            <mo fence="true" stretchy="true" symmetric="true"></mo>-->
+<!--                        </mrow>-->
+<!--                    </mstyle>-->
+<!--                </math>-->
+            </p>
+        </div>
+        <div style="float:right;margin-right: 50%; margin-top: 5%;">
+<!--            <math xmlns="http://www.w3.org/1998/Math/MathML">-->
+<!--                <mtable columnalign="center center center center center center" rowspacing="1pt" columnspacing="15pt"-->
+<!--                        rowlines="solid none" columnlines="solid none none none none">-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mi>i</mi>-->
+<!--                            <mo>,</mo>-->
+<!--                            <mi>j</mi>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>1</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>2</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>3</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>4</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>5</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>6</mn>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>1</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="blue">-->
+<!--                                <mn>90</mn>-->
+<!--                                <mstyle/>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>2</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd/>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="blue">-->
+<!--                                <mn>72</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>3</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="blue">-->
+<!--                                <mn>168</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>4</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="blue">-->
+<!--                                <mn>224</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>5</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="blue">-->
+<!--                                <mn>504</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>6</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                </mtable columnalign="center center center center center center" rowspacing="4pt" columnspacing="1em"-->
+<!--                        rowlines="solid none" columnlines="solid none none none none">-->
+<!--            </math>-->
+            <img src="images/2.1.png">
+        </div>
+    </div>
+    <div class="step slide" data-x="2000" data-y="-1500">
+        <div class="dec">
+            <p>سپس قطر بعدی را آپدیت می‌کنیم</p>
+            <p style="float: left; direction: ltr;">
+            <div style="line-height:3.7;">
+<!--                <math xmlns="http://www.w3.org/1998/Math/MathML">-->
+<!--                    <mstyle displaystyle="true" scriptlevel="0">-->
+<!--                        <mi>M</mi>-->
+<!--                        <mo stretchy="false">[</mo>-->
+<!--                        <mi>1</mi>-->
+<!--                        <mo>,</mo>-->
+<!--                        <mi>3</mi>-->
+<!--                        <mo stretchy="false">]</mo>-->
+<!--                        <mo>=</mo>-->
+<!--                        <mrow>-->
+<!--                            <mo>min</mo>-->
+<!--                            <mo>{</mo>-->
+<!--                            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">-->
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>1</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>1</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>1</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>0</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>1</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>3</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>72</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>60</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>132</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>1</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>0</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>2</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>3</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>90</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>120</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>210</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+<!--                            </mtable>-->
+<!--                            <mo fence="true" stretchy="true" symmetric="true"></mo>-->
+<!--                        </mrow>-->
+<!--                    </mstyle>-->
+<!--                </math>-->
+
+<!--                <math xmlns="http://www.w3.org/1998/Math/MathML">-->
+<!--                    <mstyle displaystyle="true" scriptlevel="0">-->
+<!--                        <mi>M</mi>-->
+<!--                        <mo stretchy="false">[</mo>-->
+<!--                        <mi>2</mi>-->
+<!--                        <mo>,</mo>-->
+<!--                        <mi>4</mi>-->
+<!--                        <mo stretchy="false">]</mo>-->
+<!--                        <mo>=</mo>-->
+<!--                        <mrow>-->
+<!--                            <mo>min</mo>-->
+<!--                            <mo>{</mo>-->
+<!--                            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">-->
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>1</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>2</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>4</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>168</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>126</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>294</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>1</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>3</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>4</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>72</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>84</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>156</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+<!--                            </mtable>-->
+<!--                            <mo fence="true" stretchy="true" symmetric="true"></mo>-->
+<!--                        </mrow>-->
+<!--                    </mstyle>-->
+<!--                </math>-->
+
+<!--                <math xmlns="http://www.w3.org/1998/Math/MathML">-->
+<!--                    <mstyle displaystyle="true" scriptlevel="0">-->
+<!--                        <mi>M</mi>-->
+<!--                        <mo stretchy="false">[</mo>-->
+<!--                        <mi>3</mi>-->
+<!--                        <mo>,</mo>-->
+<!--                        <mi>5</mi>-->
+<!--                        <mo stretchy="false">]</mo>-->
+<!--                        <mo>=</mo>-->
+<!--                        <mrow>-->
+<!--                            <mo>min</mo>-->
+<!--                            <mo>{</mo>-->
+<!--                            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">-->
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>2</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>3</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>5</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>224</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>192</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>416</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>2</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>4</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>5</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>168</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>336</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>504</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+<!--                            </mtable>-->
+<!--                            <mo fence="true" stretchy="true" symmetric="true"></mo>-->
+<!--                        </mrow>-->
+<!--                    </mstyle>-->
+<!--                </math>-->
+
+<!--                <math xmlns="http://www.w3.org/1998/Math/MathML">-->
+<!--                    <mstyle displaystyle="true" scriptlevel="0">-->
+<!--                        <mi>M</mi>-->
+<!--                        <mo stretchy="false">[</mo>-->
+<!--                        <mi>4</mi>-->
+<!--                        <mo>,</mo>-->
+<!--                        <mi>6</mi>-->
+<!--                        <mo stretchy="false">]</mo>-->
+<!--                        <mo>=</mo>-->
+<!--                        <mrow>-->
+<!--                            <mo>min</mo>-->
+<!--                            <mo>{</mo>-->
+<!--                            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">-->
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>6</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>3</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>4</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>6</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>504</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>252</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>756</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>6</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>6</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>3</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>5</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>6</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>224</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>288</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>512</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+<!--                            </mtable>-->
+<!--                            <mo fence="true" stretchy="true" symmetric="true"></mo>-->
+<!--                        </mrow>-->
+<!--                    </mstyle>-->
+<!--                </math>-->
+            <img src="images/3.png">
+            </div>
+            </p>
+        </div>
+        <div style="float:right;margin-right: 50%; margin-top: -3%;">
+<!--            <math xmlns="http://www.w3.org/1998/Math/MathML">-->
+<!--                <mtable columnalign="center center center center center center" rowspacing="1pt" columnspacing="10pt"-->
+<!--                        rowlines="solid none" columnlines="solid none none none none">-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mi>i</mi>-->
+<!--                            <mo>,</mo>-->
+<!--                            <mi>j</mi>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>1</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>2</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>3</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>4</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>5</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>6</mn>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>1</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="blue">-->
+<!--                                <mn>90</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="red">-->
+<!--                                <mn>132</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>2</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd/>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="blue">-->
+<!--                                <mn>72</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="red">-->
+<!--                                <mn>156</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>3</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="blue">-->
+<!--                                <mn>168</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="red">-->
+<!--                                <mn>416</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>4</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="blue">-->
+<!--                                <mn>224</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="red">-->
+<!--                                <mn>512</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>5</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="blue">-->
+<!--                                <mn>504</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>6</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                </mtable columnalign="center center center center center center" rowspacing="4pt" columnspacing="1em"-->
+<!--                        rowlines="solid none" columnlines="solid none none none none">-->
+<!--            </math>-->
+            <img src="images/3.1.png">
+        </div>
+    </div>
+    <div class="step slide" data-x="3000" data-y="-1500">
+        <div class="dec">
+            <p>سپس قطر سوم را آپدیت می‌کنیم</p>
+            <p style="float: left; direction: ltr;">
+            <div style="line-height:3.7;">
+<!--                <math xmlns="http://www.w3.org/1998/Math/MathML">-->
+<!--                    <mstyle displaystyle="true" scriptlevel="0">-->
+<!--                        <mi>M</mi>-->
+<!--                        <mo stretchy="false">[</mo>-->
+<!--                        <mi>1</mi>-->
+<!--                        <mo>,</mo>-->
+<!--                        <mi>4</mi>-->
+<!--                        <mo stretchy="false">]</mo>-->
+<!--                        <mo>=</mo>-->
+<!--                        <mrow>-->
+<!--                            <mo>min</mo>-->
+<!--                            <mo>{</mo>-->
+<!--                            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">-->
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>1</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>1</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>1</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>0</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>1</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>4</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>156</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>105</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>261</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>1</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>0</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>2</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>4</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>90</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>168</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>210</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>468</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>1</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>0</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>3</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>4</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>132</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>140</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>272</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+<!--                            </mtable>-->
+<!--                            <mo fence="true" stretchy="true" symmetric="true"></mo>-->
+<!--                        </mrow>-->
+<!--                    </mstyle>-->
+<!--                </math>-->
+<!--                <math xmlns="http://www.w3.org/1998/Math/MathML">-->
+<!--                    <mstyle displaystyle="true" scriptlevel="0">-->
+<!--                        <mi>M</mi>-->
+<!--                        <mo stretchy="false">[</mo>-->
+<!--                        <mi>2</mi>-->
+<!--                        <mo>,</mo>-->
+<!--                        <mi>5</mi>-->
+<!--                        <mo stretchy="false">]</mo>-->
+<!--                        <mo>=</mo>-->
+<!--                        <mrow>-->
+<!--                            <mo>min</mo>-->
+<!--                            <mo>{</mo>-->
+<!--                            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">-->
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>1</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>2</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>5</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>416</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>144</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>560</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>1</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>3</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>5</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>72</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>224</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>96</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>392</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>1</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>4</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>5</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>156</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>168</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>324</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+<!--                            </mtable>-->
+<!--                            <mo fence="true" stretchy="true" symmetric="true"></mo>-->
+<!--                        </mrow>-->
+<!--                    </mstyle>-->
+<!--                </math>-->
+
+<!--                <math xmlns="http://www.w3.org/1998/Math/MathML">-->
+<!--                    <mstyle displaystyle="true" scriptlevel="0">-->
+<!--                        <mi>M</mi>-->
+<!--                        <mo stretchy="false">[</mo>-->
+<!--                        <mi>3</mi>-->
+<!--                        <mo>,</mo>-->
+<!--                        <mi>6</mi>-->
+<!--                        <mo stretchy="false">]</mo>-->
+<!--                        <mo>=</mo>-->
+<!--                        <mrow>-->
+<!--                            <mo>min</mo>-->
+<!--                            <mo>{</mo>-->
+<!--                            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">-->
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>6</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>2</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>3</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>6</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>512</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>216</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>728</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>6</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>2</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>4</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>6</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>168</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>504</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>378</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>1050</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>6</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>6</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>2</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>5</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>6</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>416</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>432</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>848</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+<!--                            </mtable>-->
+<!--                            <mo fence="true" stretchy="true" symmetric="true"></mo>-->
+<!--                        </mrow>-->
+<!--                    </mstyle>-->
+<!--                </math>-->
+            <img src="images/4.png">
+            </div>
+            </p>
+        </div>
+        <div style="float:right;margin-right: 50%; margin-top: -3.5%;">
+<!--            <math xmlns="http://www.w3.org/1998/Math/MathML">-->
+<!--                <mtable columnalign="center center center center center center" rowspacing="1pt" columnspacing="10pt"-->
+<!--                        rowlines="solid none" columnlines="solid none none none none">-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mi>i</mi>-->
+<!--                            <mo>,</mo>-->
+<!--                            <mi>j</mi>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>1</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>2</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>3</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>4</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>5</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>6</mn>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>1</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="blue">-->
+<!--                                <mn>90</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="red">-->
+<!--                                <mn>132</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="orange">-->
+<!--                                <mn>261</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>2</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd/>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="blue">-->
+<!--                                <mn>72</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="red">-->
+<!--                                <mn>156</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="orange">-->
+<!--                                <mn>324</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>3</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="blue">-->
+<!--                                <mn>168</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="red">-->
+<!--                                <mn>416</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="orange">-->
+<!--                                <mn>728</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>4</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="blue">-->
+<!--                                <mn>224</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="red">-->
+<!--                                <mn>512</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>5</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="blue">-->
+<!--                                <mn>504</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>6</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                </mtable columnalign="center center center center center center" rowspacing="4pt" columnspacing="1em"-->
+<!--                        rowlines="solid none" columnlines="solid none none none none">-->
+<!--            </math>-->
+            <img src="images/4.1.png">
+        </div>
+    </div>
+    <div class="step slide" data-x="4000" data-y="-1500">
+        <div class="dec">
+            <p>سپس قطر چهارم را آپدیت می‌کنیم</p>
+            <p style="float: left; direction: ltr;">
+            <div style="line-height:3.7;">
+<!--                <math xmlns="http://www.w3.org/1998/Math/MathML">-->
+<!--                    <mstyle displaystyle="true" scriptlevel="0">-->
+<!--                        <mi>M</mi>-->
+<!--                        <mo stretchy="false">[</mo>-->
+<!--                        <mi>1</mi>-->
+<!--                        <mo>,</mo>-->
+<!--                        <mi>5</mi>-->
+<!--                        <mo stretchy="false">]</mo>-->
+<!--                        <mo>=</mo>-->
+<!--                        <mrow>-->
+<!--                            <mo>min</mo>-->
+<!--                            <mo>{</mo>-->
+<!--                            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">-->
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>1</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>1</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>1</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>0</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>1</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>5</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>324</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>120</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>444</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>1</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>0</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>2</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>5</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>90</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>416</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>240</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>746</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>1</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>0</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>3</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>5</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>132</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>244</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>160</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>536</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>1</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>0</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>4</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>5</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>261</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>280</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>541</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+<!--                            </mtable>-->
+<!--                            <mo fence="true" stretchy="true" symmetric="true"></mo>-->
+<!--                        </mrow>-->
+<!--                    </mstyle>-->
+<!--                </math>-->
+<!--                <math xmlns="http://www.w3.org/1998/Math/MathML">-->
+<!--                    <mstyle displaystyle="true" scriptlevel="0">-->
+<!--                        <mi>M</mi>-->
+<!--                        <mo stretchy="false">[</mo>-->
+<!--                        <mi>2</mi>-->
+<!--                        <mo>,</mo>-->
+<!--                        <mi>6</mi>-->
+<!--                        <mo stretchy="false">]</mo>-->
+<!--                        <mo>=</mo>-->
+<!--                        <mrow>-->
+<!--                            <mo>min</mo>-->
+<!--                            <mo>{</mo>-->
+<!--                            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">-->
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>6</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>1</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>2</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>6</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>728</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>162</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>890</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>6</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>1</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>3</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>6</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>72</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>512</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>108</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>692</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>6</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>1</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>4</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>6</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>156</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>504</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>189</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>849</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>6</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>6</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>1</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>5</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>6</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>324</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>216</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>540</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+<!--                            </mtable>-->
+<!--                            <mo fence="true" stretchy="true" symmetric="true"></mo>-->
+<!--                        </mrow>-->
+<!--                    </mstyle>-->
+<!--                </math>-->
+            <img src="images/5.png">
+            </div>
+            </p>
+        </div>
+        <div style="float:right;margin-right: 50%; margin-top: -1%;">
+<!--            <math xmlns="http://www.w3.org/1998/Math/MathML">-->
+<!--                <mtable columnalign="center center center center center center" rowspacing="1pt" columnspacing="10pt"-->
+<!--                        rowlines="solid none" columnlines="solid none none none none">-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mi>i</mi>-->
+<!--                            <mo>,</mo>-->
+<!--                            <mi>j</mi>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>1</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>2</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>3</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>4</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>5</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>6</mn>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>1</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="blue">-->
+<!--                                <mn>90</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="red">-->
+<!--                                <mn>132</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="orange">-->
+<!--                                <mn>261</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="magenta">-->
+<!--                                <mn>444</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>2</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd/>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="blue">-->
+<!--                                <mn>72</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="red">-->
+<!--                                <mn>156</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="orange">-->
+<!--                                <mn>324</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="magenta">-->
+<!--                                <mn>540</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>3</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="blue">-->
+<!--                                <mn>168</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="red">-->
+<!--                                <mn>416</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="orange">-->
+<!--                                <mn>728</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>4</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="blue">-->
+<!--                                <mn>224</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="red">-->
+<!--                                <mn>512</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>5</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="blue">-->
+<!--                                <mn>504</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>6</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                </mtable columnalign="center center center center center center" rowspacing="4pt" columnspacing="1em"-->
+<!--                        rowlines="solid none" columnlines="solid none none none none">-->
+<!--            </math>-->
+            <img src="images/5.1.png">
+        </div>
+    </div>
+    <div class="step slide" data-x="5000" data-y="-1500">
+        <div class="dec">
+            <p>در نهایت قطر آخر را آپدیت می‌کنیم</p>
+            <br/>
+            <p style="float: left; direction: ltr;">
+            <div style="line-height:3.7;">
+<!--                <math xmlns="http://www.w3.org/1998/Math/MathML">-->
+<!--                    <mstyle displaystyle="true" scriptlevel="0">-->
+<!--                        <mi>M</mi>-->
+<!--                        <mo stretchy="false">[</mo>-->
+<!--                        <mi>1</mi>-->
+<!--                        <mo>,</mo>-->
+<!--                        <mi>6</mi>-->
+<!--                        <mo stretchy="false">]</mo>-->
+<!--                        <mo>=</mo>-->
+<!--                        <mrow>-->
+<!--                            <mo>min</mo>-->
+<!--                            <mo>{</mo>-->
+<!--                            <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">-->
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>1</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>1</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>1</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>6</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>0</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>1</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>6</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>540</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>135</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>675</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>1</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>2</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>6</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>0</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>2</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>6</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>90</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>728</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>270</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>1088</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>1</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>3</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>6</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>0</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>3</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>6</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>132</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>512</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>180</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>824</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>1</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>4</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>6</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>0</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>4</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>6</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>261</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>504</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>315</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>1080</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+
+<!--                                <mtr>-->
+<!--                                    <mtd>-->
+<!--                                        <mi>K</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mi>&rarr;</mi>-->
+<!--                                        <mi></mi>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>1</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>5</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>M</mi>-->
+<!--                                        <mo stretchy="false">[</mo>-->
+<!--                                        <mi>6</mi>-->
+<!--                                        <mo>,</mo>-->
+<!--                                        <mi>6</mi>-->
+<!--                                        <mo stretchy="false">]</mo>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>0</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>5</mi>-->
+<!--                                        </msub>-->
+<!--                                        <msub>-->
+<!--                                            <mi>d</mi>-->
+<!--                                            <mi>6</mi>-->
+<!--                                        </msub>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>444</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>0</mi>-->
+<!--                                        <mo>+</mo>-->
+<!--                                        <mi>360</mi>-->
+<!--                                        <mo>=</mo>-->
+<!--                                        <mi>804</mi>-->
+<!--                                    </mtd>-->
+<!--                                </mtr>-->
+<!--                            </mtable>-->
+<!--                            <mo fence="true" stretchy="true" symmetric="true"></mo>-->
+<!--                        </mrow>-->
+<!--                    </mstyle>-->
+<!--                </math>-->
+            <img src="images/6.png">
+            </div>
+            </p>
+        </div>
+        <div style="float:right;margin-right: 50%; margin-top: 5%;">
+<!--            <math xmlns="http://www.w3.org/1998/Math/MathML">-->
+<!--                <mtable columnalign="center center center center center center" rowspacing="1pt" columnspacing="10pt"-->
+<!--                        rowlines="solid none" columnlines="solid none none none none">-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mi>i</mi>-->
+<!--                            <mo>,</mo>-->
+<!--                            <mi>j</mi>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>1</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>2</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>3</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>4</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>5</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>6</mn>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>1</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="blue">-->
+<!--                                <mn>90</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="red">-->
+<!--                                <mn>132</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="orange">-->
+<!--                                <mn>261</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="magenta">-->
+<!--                                <mn>444</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="green">-->
+<!--                                <mn>675</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>2</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd/>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="blue">-->
+<!--                                <mn>72</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="red">-->
+<!--                                <mn>156</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="orange">-->
+<!--                                <mn>324</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="magenta">-->
+<!--                                <mn>540</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>3</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="blue">-->
+<!--                                <mn>168</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="red">-->
+<!--                                <mn>416</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="orange">-->
+<!--                                <mn>728</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>4</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="blue">-->
+<!--                                <mn>224</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="red">-->
+<!--                                <mn>512</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>5</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd>-->
+<!--                            <mstyle mathcolor="blue">-->
+<!--                                <mn>504</mn>-->
+<!--                            </mstyle>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                    <mtr>-->
+<!--                        <mtd>-->
+<!--                            <mn>6</mn>-->
+<!--                        </mtd>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd/>-->
+<!--                        <mtd>-->
+<!--                            <mn>0</mn>-->
+<!--                        </mtd>-->
+<!--                    </mtr>-->
+<!--                </mtable columnalign="center center center center center center" rowspacing="4pt" columnspacing="1em"-->
+<!--                        rowlines="solid none" columnlines="solid none none none none">-->
+<!--            </math>-->
+            <img src="images/6.1.png">
+        </div>
+    </div>
+    <!--q1-->
+
+    <!--q3-->
+    <div class="step slide type1 " data-x="15550" data-y="3500" data-z="-1000" data-rotate="90" data-scale="6">
+
+        <p style="margin-top: 8%;margin-right: 5%;">
+            سوال سوم:
+        </p>
+        <p class="dec">
+            با استفاده از برنامه نویسی پویا در کوله پشتی با ظرفیت W = 5 اشیا را طوری قرار دهید که ارزش اشیا داخل کوله
+            پشتی حداکثر شود.
+        <p/>
+        <div dir="ltr" style="margin-left: 20%; margin-top: 5%;">
+            <table class="tg2">
+                <thead>
+                <tr>
+                    <th class="tg2-0pky">Weight<br></th>
+                    <th class="tg2-0pky">2</th>
+                    <th class="tg2-0pky">3</th>
+                    <th class="tg2-0pky">4</th>
+                    <th class="tg2-0pky">5</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="tg2-0pky">Price<br></td>
+                    <td class="tg2-0pky">3</td>
+                    <td class="tg2-0pky">4</td>
+                    <td class="tg2-0pky">5</td>
+                    <td class="tg2-0pky">6</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="margin-top: 5%; margin-right: 10%;">
+            <p>توضیحات:</p>
+            <p style="font-size: 20px; margin-left: 7%;margin-right: 5%;">برای حل از شیوه‌ی بازگشتی زیر استفاده می‌کنیم
+                و به سراغ حل کردن
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mstyle displaystyle="true" scriptlevel="0">
+                        <mi>P</mi>
+                        <mo stretchy="false">[</mo>
+                        <mi>n</mi>
+                        <mo>,</mo>
+                        <mi>w</mi>
+                        <mo stretchy="false">]</mo>
+                    </mstyle>
+                </math>
+                می‌رویم
+            </p>
+        </div>
+        <div style="float:left;font-size: 25px; margin-left: 5%; margin-top: 3%;">
+            <!--            <math xmlns="http://www.w3.org/1998/Math/MathML">-->
+            <!--                <mstyle displaystyle="true" scriptlevel="0">-->
+            <!--                    <mi>P</mi>-->
+            <!--                    <mo stretchy="false">[</mo>-->
+            <!--                    <mi>n</mi>-->
+            <!--                    <mo>,</mo>-->
+            <!--                    <mi>w</mi>-->
+            <!--                    <mo stretchy="false">]</mo>-->
+            <!--                    <mo>=</mo>-->
+            <!--                    <mi>max</mi>-->
+            <!--                    <mrow>-->
+            <!--                        <mo>{</mo>-->
+            <!--                        <mtable columnalign="left left" rowspacing=".2em" columnspacing="1em" displaystyle="false">-->
+            <!--                            <mtr>-->
+            <!--                                <mtd>-->
+            <!--                                    <mi>P</mi>-->
+            <!--                                    <mo stretchy="false">[</mo>-->
+            <!--                                    <mi>n</mi>-->
+            <!--                                    <mo>-</mo>-->
+            <!--                                    <mn>1</mn>-->
+            <!--                                    <mo stretchy="false">][</mo>-->
+            <!--                                    <mi>W</mi>-->
+            <!--                                    <mo stretchy="false">]</mo>-->
+            <!--                                </mtd>-->
+            <!--                            </mtr>-->
+            <!--                            <mtr>-->
+            <!--                                <mtd>-->
+            <!--                                    <mi>P</mi>-->
+            <!--                                    <mo>n</mo>-->
+            <!--                                    <mo>+</mo>-->
+            <!--                                    <mi>P</mi>-->
+            <!--                                    <mo stretchy="false">[</mo>-->
+            <!--                                    <mi>n</mi>-->
+            <!--                                    <mo>-</mo>-->
+            <!--                                    <mn>1</mn>-->
+            <!--                                    <mo stretchy="false">][</mo>-->
+            <!--                                    <mi>W</mi>-->
+            <!--                                    <mo>-</mo>-->
+            <!--                                    <mi>W</mi>-->
+            <!--                                    <mo>n</mo>-->
+            <!--                                    <mo stretchy="false">]</mo>-->
+            <!--                                </mtd>-->
+            <!--                            </mtr>-->
+            <!--                        </mtable>-->
+            <!--                        <mo fence="true" stretchy="true" symmetric="true"></mo>-->
+            <!--                    </mrow>-->
+            <!--                </mstyle>-->
+            <!--            </math>-->
+            <img src="images/8.png">
         </div>
     </div>
 
+    <!--q3-->
 
-    <div class="step slide oposit-text" data-x="-8800" data-y="-200" data-scale="2">
-        <img src="./images/Tor_logo.png" style="float: left;margin-top:60px; width:15%">
-        <h6 style="margin:100px -30px 0 10px; font-size: 45px; color: #555;">معرفی و آشنایی با سرویس Tor</h6>
-        <ol style="float: right; color: #555; direction: rtl; line-height: 2.5; font-size: 33px; margin: 80px 50px 0 15px;">
-            <i class="ion-android-checkbox-blank" style="font-size: 30px; color:#c69; margin-left: 20px;"></i>The Onion
-            Router (Tor)
-            <br><i class="ion-android-checkbox-blank" style="font-size: 30px; color:#c69; margin-left: 20px;"></i> از
-            آزمایشگاه تحقیقات نیروی دریایی ایالات متحده تا دولت سوئد!
-            <br><i class="ion-android-checkbox-blank" style="font-size: 30px; color:#c69; margin-left: 20px;"></i>محبوب
-            ترین و امن ترین ابزار برای وب گردی با هویت ناشناس
-        </ol>
-        <p class="num" style="margin: 0 0px 120px 0;">۱</p>
-    </div>
-
-    <div id="its" class="step slide padd" data-x="-5500" data-y="3500" data-rotate="90" data-scale="6">
-        <img src="./images/Tor_logo.png" style="float: left;margin-top:20px; width:15%">
-        <h6 style="margin:40px 0 0 10px; font-size: 45px; color: #555;">سرویس Tor چگونه کار می‌کند؟</h6>
-        <img src="./css/how-tor-works.jpg"
-             style="width:87%;float:left;margin-left:65px;margin-top:35px;border-radius:5%;">
-        <p class="num" style="margin: 500px 30px 15px 0;">۲</p>
-    </div>
-
-    <div class="step slide type " data-x="2550" data-y="4850" data-z="-3000" data-rotate="180" data-scale="6">
-        <div style="position: absolute; top: 25px; right: 20px;">
-            <img src="./css/Asymmetric_encryption.png" style="float: left; width:15%;margin-left:20px;">
-            <h1 style="font-size: 40px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0); margin: 20px 20px 0 0; color: #555; float: right; color: #555;">
-                رمزنگاری دو کلیده؟</h1>
+    <!--q4-->
+    <div class="step slide" data-x="2550" data-y="4850" data-z="-3000" data-rotate="180" data-scale="6">
+        <p style="margin-top: 8%;margin-right: 5%;">
+            سوال چهارم:
+        </p>
+        <p class="dec">
+            با استفاده از الگوریتم حریصانه در مساله زیر که کوله پشتی ۰ و ۱ است و حداکثر وزن قابل تحمل ۳۸ است و با توجه
+            به جدول مقابل مساله را حل کنید.
+        <p/>
+        <div dir="ltr" style="margin-left: 20%; margin-top: 5%;">
+            <table class="tg2">
+                <thead>
+                <tr>
+                    <th class="tg2-0pky">Weight<br></th>
+                    <th class="tg2-0pky">9</th>
+                    <th class="tg2-0pky">15</th>
+                    <th class="tg2-0pky">20</th>
+                    <th class="tg2-0pky">10</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="tg2-0pky">Price<br></td>
+                    <td class="tg2-0pky">6</td>
+                    <td class="tg2-0pky">20</td>
+                    <td class="tg2-0pky">14</td>
+                    <td class="tg2-0pky">8</td>
+                </tr>
+                </tbody>
+            </table>
         </div>
-        <p class="num" style="margin: 500px 30px 15px 0;">۳</p>
-    </div>
-
-    <div class="step slide type1 " data-x="12550" data-y="8850" data-z="-1000" data-rotate="90" data-scale="6">
-        <div style="position: absolute; top: 25px; right: 20px;">
-            <img src="./css/Asymmetric_encryption.png" style="float: left; width:15%;margin-left:20px;">
-            <h1 style="font-size: 40px; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0); margin: 20px 20px 0 0; color: #555; float: right; color: #555;">
-                شیوه استفاده رمزنگاری دو کلیده در Tor</h1>
+        <div style="margin-top: 5%; margin-right: 10%;">
+            <p>توضیحات:</p>
+            <p style="font-size: 20px; margin-left: 7%;margin-right: 5%;">برای حل ابتدا نسبت ارزش(قیمت) به وزن را برای
+                هرکالا پیدا می‌کنیم و به صورت نزولی
+                مرتب می‌کنیم. برای حل با الگوریتم حریصانه باید در هر مرحله بهترین انتخاب ممکن(بیشترین سودی که می‌توان در
+                کیف قرار داد) را انجام بدهیم.
+            </p>
         </div>
-        <p class="num" style="margin: 500px 30px 15px 0;">۴</p>
     </div>
+    <div class="step slide" data-x="9000" data-y="4850" data-z="-3000" data-rotate="180" data-scale="6">
+<!--        <p style="float:left;font-size: 25px; margin-left: 5%; margin-top: 5%; line-height: 2">-->
+<!--            A:-->
+<!--            <math xmlns="http://www.w3.org/1998/Math/MathML">-->
+<!--                <mfrac>-->
+<!--                    <mi> 20</mi>-->
+<!--                    <mi> 15</mi>-->
+<!--                </mfrac>-->
+<!--                <mo>=</mo>-->
+<!--                <mi>1.33</mi>-->
+<!--            </math>-->
+<!--        </p>-->
+<!--        <p style="float:left;font-size: 25px; margin-left: 5%; margin-top: 5%; line-height: 2">-->
 
-    <div class="step slide oposit-text" data-x="5000" data-y="-5000" data-rotate="1500" data-scale="2">
-        <img src="./images/Tor_logo.png" style="float: left;width:15%">
-        <h1 style="margin:30px 10px 10px 10px; color: #555; font-size: 38px;">پل(Bridge) چیست؟</h1>
-        <h4 style="margin-top: 60px; line-height: 2; font-size: 28px; line-height: 3;"><i
-                class="ion-android-checkbox-blank" style="font-size: 30px; color:#6a6a6a; margin-left: 10px;"></i>
-            دلایل استفاده از پل</h4>
-        <ol style="float: right;list-style-type: square; margin-right:8%;">
-            <li style="line-height: 1.5; font-size: 28px;">
-                بلاک شدن شبکه‌ی Tor توسط سرویس دهنده‌های اینترنت
-            </li>
-            <li style="line-height: 1.5; font-size: 28px;">
-                جلوگیری از فهمیدن سرویس دهنده‌های اینترنت در مورد استفاده از Tor
-            </li>
-        </ol>
-        <p style="line-height: 2.2; font-size: 28px;margin-top:15%;">
-                <span style="font-weight: 700; font-size: 35px;">
-                    سه راه دریافت پل:</span>
-            <br/>
-            <span style="margin-right: 8%;"><i class="ion-arrow-left-c"
-                                               style="font-size: 30px; color:#c69; margin-left: 10px;"></i>از طریق تنظیمات شبکه‌ی Tor(مخصوص کاربران مرورگر Tor)</span>
-            <br/>
-            <span style="margin-right: 8%;"><i class="ion-arrow-left-c"
-                                               style="font-size: 30px; color:#c69; margin-left: 10px;"></i>از طریق سایت دریافت پل (bridges.torproject.org)</span>
-            <br/>
-            <span style="margin-right: 8%;"><i class="ion-arrow-left-c"
-                                               style="font-size: 30px; color:#c69; margin-left: 10px;"></i>درخواست از طریق ایمیل (bridges@torproject.org)</span>
-            <br/>
-            <span style="margin-right: 13%;"><i class="ion-arrow-left-b"
-                                                style="font-size: 30px; color:#c69; margin-left: 10px;"></i>get transport obfs4</span>
-        </p>
-        <p class="num" style="margin: 500px 30px 100px 0;">۴</p>
-    </div>
+<!--            B:-->
+<!--            <math xmlns="http://www.w3.org/1998/Math/MathML">-->
+<!--                <mfrac>-->
+<!--                    <mi> 8</mi>-->
+<!--                    <mi> 10</mi>-->
+<!--                </mfrac>-->
+<!--                <mo>=</mo>-->
+<!--                <mi>0.8</mi>-->
+<!--            </math>-->
+<!--        </p>-->
+<!--        <p style="float:left;font-size: 25px; margin-left: 5%; margin-top: 5%; line-height: 2">-->
 
-    <div class="step slide oposit-text" data-x="5000" data-y="-8000" data-rotate="1450" data-scale="4">
-        <img src="./images/Tor_logo.png" style="float: left;width:15%">
-        <h1 style="margin:30px 10px 10px 10px; color: #555; font-size: 38px;">تفاوت میان Tor و vpn</h1>
-        <h4 style="margin-top: 40px;font-size: 30px; line-height: 3;">
-            <i class="ion-android-checkbox-blank"
-               style="font-size: 30px; color:#6a6a6a; margin-left: 10px;">
-            </i>
-            مزایا و معایب استفاده از Tor
-        </h4>
-        <p style="line-height: 2; font-size: 20px;margin-right:5%;">
-            <i class="ion-android-checkmark-circle"
-               style="font-size: 25px; color: #c69; margin-left: 10px;">
-            </i>
-            Tor یک سرویس رایگان است
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="ion-android-close"
-               style="font-size: 25px; color: #c69; margin-left: 10px;">
-            </i>
-            توسط برخی از سرویس های وب مسدود شده است
-        </p>
-        <p style="line-height: 2; font-size: 20px;margin-right:5%;">
-            <i class="ion-android-checkmark-circle"
-               style="font-size: 25px; color: #c69; margin-left: 10px;">
-            </i>
-            به نسبت vpn ها خیلی سخت‌تر مسدود می‌شود
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="ion-android-close"
-               style="font-size: 25px; color: #c69; margin-left: 10px;">
-            </i>
-            به نسبت vpn سرعت کمتری دارد
-        </p>
-        <p style="line-height: 2; font-size: 20px;margin-right:5%;">
-            <i class="ion-android-checkmark-circle"
-               style="font-size: 25px; color: #c69; margin-left: 8px;">
-            </i>
-            Tor از حریم شخصی کاربر حفاظت می‌کند
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="ion-android-close"
-               style="font-size: 25px; color: #c69; margin-left: 10px;">
-            </i>
-            آسیب‌پذیر بودن در برابر پروتکل http
-        </p>
-        <br/>
-        <br/>
-        <i class="ion-android-checkbox-blank"
-           style="font-size: 30px; color:#6a6a6a; margin-left: 10px;">
-        </i>
-        مزایا و معایب استفاده از vpn
-        <p style="line-height: 2; font-size: 20px;margin-right:5%;">
-            <i class="ion-android-checkmark-circle"
-               style="font-size: 25px; color: #c69; margin-left: 10px;">
-            </i>
-            در مقایسه با Tor سرعت بالاتری دارد
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="ion-android-close"
-               style="font-size: 25px; color: #c69; margin-left: 10px;">
-            </i>
-            امنیت ضعیفی دارند
-        </p>
-        <p style="line-height: 2; font-size: 20px;margin-right:5%;">
-            <i class="ion-android-checkmark-circle"
-               style="font-size: 25px; color: #c69; margin-left: 10px;">
-            </i>
-            با استفاده از vpn، کاربر ناشناس باقی می‌ماند(همچنین Tor)
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <i class="ion-android-close"
-               style="font-size: 25px; color: #c69; margin-left: 10px;">
-            </i>
-            اکثریت غیر رایگان هستند
-        </p>
-        <p class="num" style="margin: 500px 30px 100px 0;">۵</p>
+<!--            C:-->
+<!--            <math xmlns="http://www.w3.org/1998/Math/MathML">-->
+<!--                <mfrac>-->
+<!--                    <mi> 14</mi>-->
+<!--                    <mi> 20</mi>-->
+<!--                </mfrac>-->
+<!--                <mo>=</mo>-->
+<!--                <mi>0.7</mi>-->
+<!--            </math>-->
+<!--        </p>-->
+<!--        <p style="float:left;font-size: 25px; margin-left: 5%; margin-top: 5%; line-height: 2">-->
+<!--            D:-->
+<!--            <math xmlns="http://www.w3.org/1998/Math/MathML">-->
+<!--                <mfrac>-->
+<!--                    <mi> 6</mi>-->
+<!--                    <mi> 9</mi>-->
+<!--                </mfrac>-->
+<!--                <mo>=</mo>-->
+<!--                <mi>0.6</mi>-->
+<!--            </math>-->
+<!--        </p>-->
+<!--        <p style="float:left;font-size: 25px; margin-left: 5%; margin-top: 5%; line-height: 2">-->
+<!--            W: 38 و-->
+<!--        </p>-->
+        <img src="images/7.png" style="float:left;font-size: 25px; margin-left: 5%; margin-top: 5%; line-height: 2">
+        <div style="margin-top: 15%; margin-right: 10%; line-height: 2">
+            <p>توضیحات:</p>
+            <p style="font-size: 20px; margin-left: 7%;margin-right: 5%;">پس از بدست آوردن نسبت ها و مرتب سازی ابتدا
+                کالای
+                <i style="color: red;">A</i>
+                را در کیف قرار داده و وضعیت کیف به شرح زیر می‌شود:
+            <p style="float: left; margin-left: 5%;" dir="ltr">
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>Weight</mi>
+                    <mo>=</mo>
+                    <mi>15</mi>
+                </math>
+                and
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>Price</mi>
+                    <mo>=</mo>
+                    <mi>20</mi>
+                </math>
+            </p>
+            </p>
+            <br/>
+            <p style="font-size: 20px; margin-left: 7%;margin-right: 5%;">سپس کالای
+                <i style="color: red;">B</i>
+                را در کیف قرار داده و وضعیت کیف به شرح زیر می‌شود:
+            <p style="float: left; margin-left: 5%;" dir="ltr">
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>Weight</mi>
+                    <mo>=</mo>
+                    <mi>25</mi>
+                </math>
+                and
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>Price</mi>
+                    <mo>=</mo>
+                    <mi>28</mi>
+                </math>
+            </p>
+            </p>
+            <br/>
+            <p style="font-size: 20px; margin-left: 7%;margin-right: 5%;">همچنین کالای
+                <i style="color: red;">D</i>
+                را در کیف قرار داده و وضعیت کیف به شرح زیر می‌شود:
+            <p style="float: left; margin-left: 5%;" dir="ltr">
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>Weight</mi>
+                    <mo>=</mo>
+                    <mi>34</mi>
+                </math>
+                and
+                <math xmlns="http://www.w3.org/1998/Math/MathML">
+                    <mi>Price</mi>
+                    <mo>=</mo>
+                    <mi>34</mi>
+                </math>
+            </p>
+            </p>
+            <br/>
+            <p style="font-size: 25px; margin-top:3%;"> نکته: الگوریتم حریصانه برای مساله کوله پشتی ۰ و ۱ منجر به راه حل
+                بهینه نمی‌شود</p>
+        </div>
     </div>
+    <!--q4-->
 
-    <div class="step slide oposit-text" data-x="2300" data-y="-3300" data-rotate="1300" data-scale="2">
-        <img src="./images/Tor_logo.png" style="float: left;width:15%">
-        <h1 style="margin:30px 10px 10px 10px; color: #555; font-size: 38px;">سرویس‌های مخفی Tor</h1>
-        <h4 style="margin-top: 60px; line-height: 2; font-size: 28px; line-height: 3;"><i
-                class="ion-android-checkbox-blank" style="font-size: 30px; color:#6a6a6a; margin-left: 10px;"></i>سرویس‌های
-            مخفی Tor چگونه کار می‌کنند؟
-        </h4>
-        <p style="line-height: 1.5; font-size: 28px;"><i class="ion-arrow-left-c"
-                                                         style="font-size: 25px; color: #c69; margin-left: 10px;"></i>
-            گره معرف
+    <!--q5-->
+    <div class="step slide padd" data-x="-5500" data-y="3500" data-rotate="90" data-scale="6">
+        <p style="margin-top: 8%;margin-right: 5%;">
+            سوال پنجم:
         </p>
-        <p style="line-height: 1.5; font-size: 28px;"><i class="ion-arrow-left-c"
-                                                         style="font-size: 25px; color: #c69; margin-left: 10px;"></i>
-            Destributed Hash Table
-        </p>
-        <p style="line-height: 1.5; font-size: 28px;"><i class="ion-arrow-left-c"
-                                                         style="font-size: 25px; color: #c69; margin-left: 10px;"></i>
-            گره محل ملاقات
-        </p>
-        <img src="./css/Tor-hidden-service-protocol-overview.png" style="width:88%;float: left;margin-top:40px;">
-        <p class="num" style="margin: 500px 30px 100px 0;">۶</p>
+        <p class="dec">
+            با استفاده از الگوریتم هافمن برای حروف زیر کد دودویی بهینه بسازید.
+        <p/>
+        <table class="tg">
+            <thead>
+            <tr>
+                <th class="tg-kftd">Char</th>
+                <th class="tg-kftd">S</th>
+                <th class="tg-kftd">E</th>
+                <th class="tg-kftd">M</th>
+                <th class="tg-kftd">K</th>
+                <th class="tg-kftd">P</th>
+                <th class="tg-kftd">B</th>
+                <th class="tg-kftd">J</th>
+                <th class="tg-kftd">N</th>
+                <th class="tg-kftd">W</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="tg-0lax">Repeat</td>
+                <td class="tg-0lax">11</td>
+                <td class="tg-0lax">8</td>
+                <td class="tg-0lax">18</td>
+                <td class="tg-0lax">1</td>
+                <td class="tg-0lax">9</td>
+                <td class="tg-0lax">10</td>
+                <td class="tg-0lax">2</td>
+                <td class="tg-0lax">12</td>
+                <td class="tg-0lax">2</td>
+            </tr>
+            </tbody>
+        </table>
+        <div style="margin-top: 10%; margin-right: 10%;">
+            <p>توضیحات:</p>
+            <p style="font-size: 20px;">ابتدا حروف را بر حسب تعداد تکرار بصورت صعودی مرتب می‌کنیم سپس در هر مرتبه ۲ حرف
+                با کمترین تکرار را جمع می‌زنیم و دوباره لیست را مرتب می‌کنیم در نهایت در درخت ایجاد شده برای فرزندان سمت
+                چپ عدد صفر و برای سمت راست عدد یک را در نظر می‌گیریم.
+            </p>
+        </div>
     </div>
+    <div class="step slide padd" data-x="-5500" data-y="10500" data-rotate="90" data-scale="6">
+        <div style="margin-right: -2%; margin-top: -3%;">
+            <video width="800" height="650" controls>
+                <source src="images/favicon.png.webm" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <div class="step slide padd" data-x="-5500" data-y="17500" data-rotate="90" data-scale="6">
+        <p style="margin-top: 8%;margin-right: 5%;">
+            جدول نهایی:
+        </p>
+        <div dir="ltr" style="float:right;margin-top: 15%; margin-right: -3%;">
+            <table class="tg1">
+                <thead>
+                <tr>
+                    <th class="tg1-fsme">Char</th>
+                    <th class="tg1-p170">S</th>
+                    <th class="tg1-p170">E</th>
+                    <th class="tg1-p170">M</th>
+                    <th class="tg1-p170">K</th>
+                    <th class="tg1-p170">P</th>
+                    <th class="tg1-p170">B</th>
+                    <th class="tg1-p170">J</th>
+                    <th class="tg1-p170">N</th>
+                    <th class="tg1-p170">W</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td class="tg1-9wq8">Repeat<br></td>
+                    <td class="tg1-lboi">11</td>
+                    <td class="tg1-lboi">8</td>
+                    <td class="tg1-lboi">18</td>
+                    <td class="tg1-lboi">1</td>
+                    <td class="tg1-lboi">9</td>
+                    <td class="tg1-lboi">10</td>
+                    <td class="tg1-lboi">2</td>
+                    <td class="tg1-lboi">12</td>
+                    <td class="tg1-lboi">2</td>
+                </tr>
+                <tr>
+                    <td class="tg1-nrix">Char code</td>
+                    <td class="tg1-cly1">110</td>
+                    <td class="tg1-cly1">001</td>
+                    <td class="tg1-cly1">01</td>
+                    <td class="tg1-cly1">00010</td>
+                    <td class="tg1-cly1">100</td>
+                    <td class="tg1-cly1">101</td>
+                    <td class="tg1-cly1">00011</td>
+                    <td class="tg1-cly1">111</td>
+                    <td class="tg1-cly1">0000</td>
+                </tr>
+                <tr>
+                    <td class="tg1-nrix">Huffman Code</td>
+                    <td class="tg1-cly1" colspan="9">
+                        110110110110110110110110110110110001001001001001001001001010101010101010101010101010101010101010<br>0010100100100100100100100100100101101101101101101101101101101000110001111111111111111111111111111111111111100000000
+                    </td>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!--q5-->
 
-    <div class="step slide oposit-text" style="height:1000px" data-x="-5300" data-y="-6000" data-rotate="1200"
-         data-scale="4">
-        <img src="./images/Tor_logo.png" style="float: left;width:15%">
-        <h1 style="margin:30px 10px 10px 10px; color: #555; font-size: 38px;">دارک وب و دیپ وب چیست؟</h1>
-        <h4 style="margin-top: 30px; line-height: 2; font-size: 28px; line-height: 3;"><i
-                class="ion-android-checkbox-blank" style="font-size: 30px; color:#6a6a6a; margin-left: 10px;"></i>دیپ وب
-        </h4>
-        <p style="line-height: 1.5; font-size: 28px;"><i class="ion-arrow-left-c"
-                                                         style="font-size: 35px; color: #c69; margin-left: 10px;"></i>به
-            علت ایندکس نشدن در موتورهای جست و جوی معمولی و دسترسی فقط از طریق شبکه‌ Tor به آن دیپ وب گفته می‌شود.
-        </p>
-        <h4 style="margin-top: 30px; line-height: 2; font-size: 28px; line-height: 3;"><i
-                class="ion-android-checkbox-blank" style="font-size: 30px; color:#6a6a6a; margin-left: 10px;"></i>دارک
-            وب
-        </h4>
-        <p style="line-height: 1.5; font-size: 26px;"><i class="ion-arrow-left-c"
-                                                         style="font-size: 35px; color: #c69; margin-left: 10px;"></i>به
-            علت ناشناس بودن و امن بودن شبکه‌ی Tor برخی افراد از آن به منظور کارهای غیرقانونی استفاده می‌کنند به همین جهت این
-            سرویس به نام دارک وب هم شناخته می‌شود.
-        </p>
-        <img src="./css/dark-web-vs-surface-web-vs-deep-web.png"
-             style="width:78%;float: left;margin-top:10px;margin-left:100px;">
-        <p class="num" style="margin: 500px 30px 100px 0;">۷</p>
-        </ol>
-    </div>
+    <!--    <div class="step slide oposit-text" data-x="5000" data-y="-5000" data-rotate="1500" data-scale="2">-->
+    <!--        <img src="./images/Tor_logo.png" style="float: left;width:15%">-->
+    <!--        <h1 style="margin:30px 10px 10px 10px; color: #555; font-size: 38px;">پل(Bridge) چیست؟</h1>-->
+    <!--        <h4 style="margin-top: 60px; line-height: 2; font-size: 28px; line-height: 3;"><i-->
+    <!--                class="ion-android-checkbox-blank" style="font-size: 30px; color:#6a6a6a; margin-left: 10px;"></i>-->
+    <!--            دلایل استفاده از پل</h4>-->
+    <!--        <ol style="float: right;list-style-type: square; margin-right:8%;">-->
+    <!--            <li style="line-height: 1.5; font-size: 28px;">-->
+    <!--                بلاک شدن شبکه‌ی Tor توسط سرویس دهنده‌های اینترنت-->
+    <!--            </li>-->
+    <!--            <li style="line-height: 1.5; font-size: 28px;">-->
+    <!--                جلوگیری از فهمیدن سرویس دهنده‌های اینترنت در مورد استفاده از Tor-->
+    <!--            </li>-->
+    <!--        </ol>-->
+    <!--        <p style="line-height: 2.2; font-size: 28px;margin-top:15%;">-->
+    <!--                <span style="font-weight: 700; font-size: 35px;">-->
+    <!--                    سه راه دریافت پل:</span>-->
+    <!--            <br/>-->
+    <!--            <span style="margin-right: 8%;"><i class="ion-arrow-left-c"-->
+    <!--                                               style="font-size: 30px; color:#c69; margin-left: 10px;"></i>از طریق تنظیمات شبکه‌ی Tor(مخصوص کاربران مرورگر Tor)</span>-->
+    <!--            <br/>-->
+    <!--            <span style="margin-right: 8%;"><i class="ion-arrow-left-c"-->
+    <!--                                               style="font-size: 30px; color:#c69; margin-left: 10px;"></i>از طریق سایت دریافت پل (bridges.torproject.org)</span>-->
+    <!--            <br/>-->
+    <!--            <span style="margin-right: 8%;"><i class="ion-arrow-left-c"-->
+    <!--                                               style="font-size: 30px; color:#c69; margin-left: 10px;"></i>درخواست از طریق ایمیل (bridges@torproject.org)</span>-->
+    <!--            <br/>-->
+    <!--            <span style="margin-right: 13%;"><i class="ion-arrow-left-b"-->
+    <!--                                                style="font-size: 30px; color:#c69; margin-left: 10px;"></i>get transport obfs4</span>-->
+    <!--        </p>-->
+    <!--        <p class="num" style="margin: 500px 30px 100px 0;">۴</p>-->
+    <!--    </div>-->
+
+    <!--    <div class="step slide oposit-text" data-x="5000" data-y="-8000" data-rotate="1450" data-scale="4">-->
+    <!--        <img src="./images/Tor_logo.png" style="float: left;width:15%">-->
+    <!--        <h1 style="margin:30px 10px 10px 10px; color: #555; font-size: 38px;">تفاوت میان Tor و vpn</h1>-->
+    <!--        <h4 style="margin-top: 40px;font-size: 30px; line-height: 3;">-->
+    <!--            <i class="ion-android-checkbox-blank"-->
+    <!--               style="font-size: 30px; color:#6a6a6a; margin-left: 10px;">-->
+    <!--            </i>-->
+    <!--            مزایا و معایب استفاده از Tor-->
+    <!--        </h4>-->
+    <!--        <p style="line-height: 2; font-size: 20px;margin-right:5%;">-->
+    <!--            <i class="ion-android-checkmark-circle"-->
+    <!--               style="font-size: 25px; color: #c69; margin-left: 10px;">-->
+    <!--            </i>-->
+    <!--            Tor یک سرویس رایگان است-->
+    <!--            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+    <!--            <i class="ion-android-close"-->
+    <!--               style="font-size: 25px; color: #c69; margin-left: 10px;">-->
+    <!--            </i>-->
+    <!--            توسط برخی از سرویس های وب مسدود شده است-->
+    <!--        </p>-->
+    <!--        <p style="line-height: 2; font-size: 20px;margin-right:5%;">-->
+    <!--            <i class="ion-android-checkmark-circle"-->
+    <!--               style="font-size: 25px; color: #c69; margin-left: 10px;">-->
+    <!--            </i>-->
+    <!--            به نسبت vpn ها خیلی سخت‌تر مسدود می‌شود-->
+    <!--            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+    <!--            <i class="ion-android-close"-->
+    <!--               style="font-size: 25px; color: #c69; margin-left: 10px;">-->
+    <!--            </i>-->
+    <!--            به نسبت vpn سرعت کمتری دارد-->
+    <!--        </p>-->
+    <!--        <p style="line-height: 2; font-size: 20px;margin-right:5%;">-->
+    <!--            <i class="ion-android-checkmark-circle"-->
+    <!--               style="font-size: 25px; color: #c69; margin-left: 8px;">-->
+    <!--            </i>-->
+    <!--            Tor از حریم شخصی کاربر حفاظت می‌کند-->
+    <!--            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+    <!--            <i class="ion-android-close"-->
+    <!--               style="font-size: 25px; color: #c69; margin-left: 10px;">-->
+    <!--            </i>-->
+    <!--            آسیب‌پذیر بودن در برابر پروتکل http-->
+    <!--        </p>-->
+    <!--        <br/>-->
+    <!--        <br/>-->
+    <!--        <i class="ion-android-checkbox-blank"-->
+    <!--           style="font-size: 30px; color:#6a6a6a; margin-left: 10px;">-->
+    <!--        </i>-->
+    <!--        مزایا و معایب استفاده از vpn-->
+    <!--        <p style="line-height: 2; font-size: 20px;margin-right:5%;">-->
+    <!--            <i class="ion-android-checkmark-circle"-->
+    <!--               style="font-size: 25px; color: #c69; margin-left: 10px;">-->
+    <!--            </i>-->
+    <!--            در مقایسه با Tor سرعت بالاتری دارد-->
+    <!--            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+    <!--            <i class="ion-android-close"-->
+    <!--               style="font-size: 25px; color: #c69; margin-left: 10px;">-->
+    <!--            </i>-->
+    <!--            امنیت ضعیفی دارند-->
+    <!--        </p>-->
+    <!--        <p style="line-height: 2; font-size: 20px;margin-right:5%;">-->
+    <!--            <i class="ion-android-checkmark-circle"-->
+    <!--               style="font-size: 25px; color: #c69; margin-left: 10px;">-->
+    <!--            </i>-->
+    <!--            با استفاده از vpn، کاربر ناشناس باقی می‌ماند(همچنین Tor)-->
+    <!--            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-->
+    <!--            <i class="ion-android-close"-->
+    <!--               style="font-size: 25px; color: #c69; margin-left: 10px;">-->
+    <!--            </i>-->
+    <!--            اکثریت غیر رایگان هستند-->
+    <!--        </p>-->
+    <!--        <p class="num" style="margin: 500px 30px 100px 0;">۵</p>-->
+    <!--    </div>-->
+
+    <!--    <div class="step slide oposit-text" data-x="2300" data-y="-3300" data-rotate="1300" data-scale="2">-->
+    <!--        <img src="./images/Tor_logo.png" style="float: left;width:15%">-->
+    <!--        <h1 style="margin:30px 10px 10px 10px; color: #555; font-size: 38px;">سرویس‌های مخفی Tor</h1>-->
+    <!--        <h4 style="margin-top: 60px; line-height: 2; font-size: 28px; line-height: 3;"><i-->
+    <!--                class="ion-android-checkbox-blank" style="font-size: 30px; color:#6a6a6a; margin-left: 10px;"></i>سرویس‌های-->
+    <!--            مخفی Tor چگونه کار می‌کنند؟-->
+    <!--        </h4>-->
+    <!--        <p style="line-height: 1.5; font-size: 28px;"><i class="ion-arrow-left-c"-->
+    <!--                                                         style="font-size: 25px; color: #c69; margin-left: 10px;"></i>-->
+    <!--            گره معرف-->
+    <!--        </p>-->
+    <!--        <p style="line-height: 1.5; font-size: 28px;"><i class="ion-arrow-left-c"-->
+    <!--                                                         style="font-size: 25px; color: #c69; margin-left: 10px;"></i>-->
+    <!--            Destributed Hash Table-->
+    <!--        </p>-->
+    <!--        <p style="line-height: 1.5; font-size: 28px;"><i class="ion-arrow-left-c"-->
+    <!--                                                         style="font-size: 25px; color: #c69; margin-left: 10px;"></i>-->
+    <!--            گره محل ملاقات-->
+    <!--        </p>-->
+    <!--        <img src="./css/Tor-hidden-service-protocol-overview.png" style="width:88%;float: left;margin-top:40px;">-->
+    <!--        <p class="num" style="margin: 500px 30px 100px 0;">۶</p>-->
+    <!--    </div>-->
+
+    <!--    <div class="step slide oposit-text" style="height:1000px" data-x="-5300" data-y="-6000" data-rotate="1200"-->
+    <!--         data-scale="4">-->
+    <!--        <img src="./images/Tor_logo.png" style="float: left;width:15%">-->
+    <!--        <h1 style="margin:30px 10px 10px 10px; color: #555; font-size: 38px;">دارک وب و دیپ وب چیست؟</h1>-->
+    <!--        <h4 style="margin-top: 30px; line-height: 2; font-size: 28px; line-height: 3;"><i-->
+    <!--                class="ion-android-checkbox-blank" style="font-size: 30px; color:#6a6a6a; margin-left: 10px;"></i>دیپ وب-->
+    <!--        </h4>-->
+    <!--        <p style="line-height: 1.5; font-size: 28px;"><i class="ion-arrow-left-c"-->
+    <!--                                                         style="font-size: 35px; color: #c69; margin-left: 10px;"></i>به-->
+    <!--            علت ایندکس نشدن در موتورهای جست و جوی معمولی و دسترسی فقط از طریق شبکه‌ Tor به آن دیپ وب گفته می‌شود.-->
+    <!--        </p>-->
+    <!--        <h4 style="margin-top: 30px; line-height: 2; font-size: 28px; line-height: 3;"><i-->
+    <!--                class="ion-android-checkbox-blank" style="font-size: 30px; color:#6a6a6a; margin-left: 10px;"></i>دارک-->
+    <!--            وب-->
+    <!--        </h4>-->
+    <!--        <p style="line-height: 1.5; font-size: 26px;"><i class="ion-arrow-left-c"-->
+    <!--                                                         style="font-size: 35px; color: #c69; margin-left: 10px;"></i>به-->
+    <!--            علت ناشناس بودن و امن بودن شبکه‌ی Tor برخی افراد از آن به منظور کارهای غیرقانونی استفاده می‌کنند به همین جهت-->
+    <!--            این-->
+    <!--            سرویس به نام دارک وب هم شناخته می‌شود.-->
+    <!--        </p>-->
+    <!--        <img src="./css/dark-web-vs-surface-web-vs-deep-web.png"-->
+    <!--             style="width:78%;float: left;margin-top:10px;margin-left:100px;">-->
+    <!--        <p class="num" style="margin: 500px 30px 100px 0;">۷</p>-->
+    <!--        </ol>-->
+    <!--    </div>-->
 
 
     <div class="step slide oposit-text" data-x="-5300" data-y="-10000" data-rotate="1100" data-scale="2">

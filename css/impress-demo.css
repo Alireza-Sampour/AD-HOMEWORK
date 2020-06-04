@@ -888,12 +888,144 @@ a {
 }
 
 .init_page {
-    margin: 90px 50px 0 0;
+    float: left;
+    margin-left: 35%;
+    margin-top: 10%;
     font-size: 30px;
 
 }
 
-#name {
+.dec {
+    margin-top: 2%;
+    margin-left: 7%;
+    margin-right: 10%;
+    font-size: 22px;
+}
+
+.tg1 {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.tg1 td {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 9px;
+    word-break: normal;
+}
+
+.tg1 th {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 9px;
+    word-break: normal;
+}
+
+.tg1 .tg1-cly1 {
+    text-align: left;
+    vertical-align: middle
+}
+
+.tg1 .tg1-lboi {
+    border-color: inherit;
+    text-align: left;
+    vertical-align: middle
+}
+
+.tg1 .tg1-9wq8 {
+    border-color: inherit;
+    text-align: center;
+    vertical-align: middle
+}
+
+.tg1 .tg1-p170 {
+    background-color: #efefef;
+    border-color: inherit;
+    text-align: left;
+    vertical-align: middle
+}
+
+.tg1 .tg1-fsme {
+    background-color: #efefef;
+    border-color: inherit;
+    text-align: center;
+    vertical-align: middle
+}
+
+.tg1 .tg1-nrix {
+    text-align: center;
+    vertical-align: middle
+}
+
+
+.dec1 {
+    margin-top: 0%;
+    margin-left: 7%;
+    margin-right: 10%;
+    font-size: 22px;
+}
+
+.info {
+    margin-top: 2%;
+    margin-left: 25%;
+    font-size: 22px;
+    float: left;
+}
+
+.tg {
+    margin-top: 7%;
+    margin-right: 25%;
+    direction: ltr;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.tg td {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 9px;
+    word-break: normal;
+}
+
+.tg th {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 9px;
+    word-break: normal;
+}
+
+.tg .tg-y698 {
+    background-color: #efefef;
+    border-color: inherit;
+    text-align: left;
+    vertical-align: top
+}
+
+.tg .tg-0pky {
+    border-color: inherit;
+    text-align: left;
+    vertical-align: top
+}
+
+.name {
     font-family: 'vazirB'
 }
 
@@ -904,10 +1036,11 @@ a {
 
 #subject {
     font-family: 'vazirb';
+    direction: ltr;
     margin-right: 60px;
     margin-bottom: 70px;
-    font-weight: 700;
-    font-size: 50px;
+    font-weight: 300;
+    font-size: 40px;
 }
 
 #logo {
@@ -1019,31 +1152,46 @@ a {
 .back-typescript {
 }
 
+.tg2 {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.tg2 td {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.tg2 th {
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    overflow: hidden;
+    padding: 10px 5px;
+    word-break: normal;
+}
+
+.tg2 .tg2-0pky {
+    border-color: inherit;
+    text-align: left;
+    vertical-align: top
+}
+
+
 .typescript {
     width: 1600px;
     height: 760px;
 }
 
-.type {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
-    background-image: url("Public_key_encryption.png");
-    background-position: 55% 65%;
-    background-repeat: no-repeat;
-    background-size: 55%;
-    padding: 0;
-    width: 900px;
-    height: 700px;
-}
-.type1 {
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
-    background-image: url("Onion_diagram.png");
-    background-position: 65% 75%;
-    background-repeat: no-repeat;
-    background-size: 85%;
-    padding: 0;
-    width: 900px;
-    height: 700px;
-}
 .txt {
     padding: 0;
 
@@ -1180,6 +1328,7 @@ a {
     font-size: 25px;
     line-height: 28px;
 }
+
 /** { background-color: rgba(255,0,0,.2); }*/
 /** * { background-color: rgba(0,255,0,.2); }*/
 /** * * { background-color: rgba(0,0,255,.2); }*/
